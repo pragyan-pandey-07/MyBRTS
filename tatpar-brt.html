@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tatpar BRT Nava Raipur</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --primary: #FF2A54;
+      --secondary: #00F5D4;
+      --bg-dark: #0D1117;
+      --bg-card: #161B22;
+      --border-color: #30363D;
+    }
+    body {
+      background-color: var(--bg-dark);
+      color: #E2E8F0;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    .glow-red { box-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary); }
+    .glow-green { box-shadow: 0 0 10px var(--secondary), 0 0 20px var(--secondary); }
+    
+    ::-webkit-scrollbar { width: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 10px; }
+    
+    .glass-card {
+      background: rgba(22, 27, 34, 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+    }
+    
+    .leaf-bg {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -1;
+      background: 
+        radial-gradient(circle at 10% 20%, rgba(0, 245, 212, 0.05) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(0, 230, 118, 0.05) 0%, transparent 40%);
+    }
+
+    .track-line {
+      background: linear-gradient(to bottom, var(--primary) 0%, var(--primary) 50%, var(--border-color) 50%, var(--border-color) 100%);
+    }
+    
+    @keyframes scan {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(200%); }
+    }
+  </style>
+</head>
+<body class="antialiased min-h-screen relative text-slate-200">
+
+  <!-- Background decorative elements -->
+  <div class="leaf-bg">
+    <!-- SVG Leaf scattered -->
+    <svg class="absolute top-20 left-10 opacity-5 text-[#00E676]" width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17 8C8 10 5.9 16 5.9 16C11 16 14 13 16 10L17 8Z"/><path d="M14.3 11.7C12.3 13.7 9 15 5.9 16C5.9 16 8 10 17 8C17 8 16 10 14.3 11.7Z"/>
+    </svg>
+    <svg class="absolute bottom-40 right-10 opacity-[0.03] text-[#00F5D4]" width="120" height="120" viewBox="0 0 24 24" fill="currentColor" style="transform: rotate(45deg);">
+      <path d="M17 8C8 10 5.9 16 5.9 16C11 16 14 13 16 10L17 8Z"/><path d="M14.3 11.7C12.3 13.7 9 15 5.9 16C5.9 16 8 10 17 8C17 8 16 10 14.3 11.7Z"/>
+    </svg>
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 glass-card px-4 py-3 flex justify-between items-center rounded-b-2xl mb-4 shadow-lg mx-2 mt-2">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-full bg-[#FF2A54] flex items-center justify-center glow-red border-2 border-[#0D1117]">
+        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      </div>
+      <div>
+        <h1 class="text-base font-bold text-white tracking-wide leading-tight" id="brand-title">Tatpar BRT</h1>
+        <p class="text-[10px] text-[#00F5D4] tracking-widest uppercase font-semibold" id="brand-subtitle">Nava Raipur</p>
+      </div>
+    </div>
+    
+    <div class="flex items-center gap-3">
+      <!-- Language Switcher -->
+      <select id="lang-select" class="bg-[#0D1117] border border-[#30363D] text-xs py-1.5 px-3 rounded-full focus:outline-none focus:border-[#00F5D4] text-[#00F5D4] font-medium shadow-inner appearance-none pr-8 relative">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="cg">छत्तीसगढ़ी</option>
+      </select>
+      <!-- Custom select arrow since appearance-none removes it -->
+      <svg class="w-3 h-3 text-[#00F5D4] absolute right-8 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </div>
+  </header>
+
+  <!-- Main View (Linear Search & Track) -->
+  <div id="linear-view" class="max-w-md mx-auto w-full pb-24">
+    
+    <!-- Search Card -->
+    <div class="px-4 mb-5">
+      <div class="glass-card rounded-2xl p-4 relative overflow-hidden shadow-xl border-t border-t-[#30363D]/50">
+        <!-- Background grid decoration -->
+        <div class="absolute inset-0 opacity-[0.02] bg-[linear-gradient(#00F5D4_1px,transparent_1px),linear-gradient(90deg,#00F5D4_1px,transparent_1px)] bg-[size:15px_15px]"></div>
+        
+        <div class="relative z-10 flex flex-col gap-4">
+          <div class="flex items-center">
+            <div class="flex flex-col items-center mr-4 w-4">
+              <div class="w-3 h-3 rounded-full border-[2.5px] border-[#00F5D4] bg-[#0D1117] relative z-10"></div>
+              <div class="w-[2px] h-10 bg-[#30363D] my-1 border-dashed"></div>
+              <div class="w-3 h-3 rounded-full border-[2.5px] border-[#FF2A54] bg-[#0D1117] relative z-10"></div>
+            </div>
+            <div class="flex-1 flex flex-col gap-3 relative">
+              <input type="text" id="input-from" value="Railway Station" class="w-full bg-[#0D1117]/50 rounded-lg border border-[#30363D] px-3 py-2.5 text-white focus:outline-none focus:border-[#00F5D4] focus:bg-[#161B22] transition-colors text-sm font-medium" placeholder="Origin">
+              <input type="text" id="input-to" value="HNLU" class="w-full bg-[#0D1117]/50 rounded-lg border border-[#30363D] px-3 py-2.5 text-white focus:outline-none focus:border-[#FF2A54] focus:bg-[#161B22] transition-colors text-sm font-medium" placeholder="Destination">
+              
+              <!-- Swap Button -->
+              <button class="absolute right-3 top-1/2 -translate-y-1/2 bg-[#161B22] border border-[#30363D] p-2 rounded-full hover:border-[#00F5D4] transition z-20 shadow-md" onclick="swapStations()">
+                <svg class="w-3.5 h-3.5 text-[#00F5D4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/></svg>
+              </button>
+            </div>
+          </div>
+          <button class="w-full bg-gradient-to-r from-[#FF2A54] to-[#E63946] text-white py-3 rounded-xl font-bold shadow-[0_4px_15px_rgba(255,42,84,0.3)] flex justify-center items-center gap-2 active:scale-[0.98] transition-transform" id="btn-find">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            <span id="txt-find">Find Buses</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nearest Stop Radar -->
+    <div class="px-4 mb-6">
+      <div class="glass-card rounded-xl p-3.5 flex items-center gap-4 border-l-[3px] border-l-[#00F5D4] bg-gradient-to-r from-[#00F5D4]/10 to-transparent">
+        <div class="w-10 h-10 rounded-full bg-[#00F5D4]/20 flex items-center justify-center relative">
+          <div class="absolute inset-0 rounded-full border border-[#00F5D4] animate-ping opacity-50"></div>
+          <svg class="w-5 h-5 text-[#00F5D4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.078 2.027-.231 3.021M15.328 15.328A9.125 9.125 0 0112 18a9.125 9.125 0 01-3.328-2.672m0 0a9.125 9.125 0 01-3.328-2.672M12 18V21M12 3a9 9 0 00-9 9m9-9a9 9 0 019 9"/></svg>
+        </div>
+        <div class="flex-1">
+          <p class="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-0.5" id="txt-nearest-label">Nearest Stop Radar</p>
+          <p class="text-sm font-bold text-white">Sector 27 South Block</p>
+          <p class="text-[#00F5D4] text-xs font-medium mt-0.5">250m • 3 min walk</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Track -->
+    <div class="px-4">
+      <div class="flex justify-between items-center mb-4 px-1">
+        <h2 class="text-base font-bold text-white flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-[#FF2A54] glow-red"></span>
+          <span id="txt-live">Live Route</span>
+        </h2>
+        <div class="flex gap-1 bg-[#161B22] p-1 rounded-lg border border-[#30363D]">
+          <button class="px-3 py-1.5 text-[11px] font-semibold rounded-md bg-[#30363D] text-white shadow-sm" id="btn-weekday">Weekday</button>
+          <button class="px-3 py-1.5 text-[11px] font-semibold rounded-md text-gray-400 hover:text-white" id="btn-weekend">Weekend</button>
+        </div>
+      </div>
+      
+      <div class="glass-card rounded-3xl p-5 relative shadow-xl overflow-hidden">
+        <!-- subtle gradient bg -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#161B22] to-[#0D1117] opacity-50 z-0"></div>
+
+        <div class="relative z-10">
+          <!-- Onboard Mode Switch -->
+          <div class="mb-5 flex justify-end">
+            <button id="btn-onboard" class="bg-[#0D1117] border border-[#30363D] text-gray-300 px-3 py-1.5 rounded-full text-[11px] font-semibold flex items-center gap-2 hover:bg-[#30363D] transition-all">
+              <div class="w-2 h-2 rounded-full bg-gray-500 onboard-indicator transition-colors"></div>
+              <span id="txt-onboard">I am inside this bus</span>
+            </button>
+          </div>
+
+          <!-- Bus Status Info -->
+          <div class="flex justify-between items-end mb-6 pb-5 border-b border-[#30363D]">
+            <div>
+              <p class="text-2xl font-black text-white tracking-tight flex items-center gap-2">
+                BRT 04
+                <span class="bg-[#00F5D4]/10 text-[#00F5D4] text-[10px] px-2 py-0.5 rounded-full border border-[#00F5D4]/30 uppercase tracking-widest font-bold">Express</span>
+              </p>
+              <p class="text-sm text-[#00F5D4] font-medium mt-1">42 km/h • On Time</p>
+            </div>
+            <div class="text-right">
+              <p class="text-[10px] text-gray-400 font-semibold uppercase tracking-wider mb-1">Next Departure</p>
+              <div class="inline-block px-2.5 py-1 bg-[#FF2A54]/10 border border-[#FF2A54]/40 rounded-lg text-[#FF2A54] text-xs font-bold animate-pulse">12 mins</div>
+            </div>
+          </div>
+
+          <!-- Track -->
+          <div class="relative pl-6 pb-2">
+            <!-- Vertical line -->
+            <div class="absolute left-[11px] top-3 bottom-4 w-[3px] track-line rounded-full"></div>
+            
+            <!-- Past Stop -->
+            <div class="relative mb-8 flex items-center opacity-40">
+              <div class="absolute -left-[23.5px] w-3.5 h-3.5 rounded-full bg-[#161B22] border-[2.5px] border-gray-500 z-10"></div>
+              <div class="flex-1 ml-5">
+                <p class="text-sm font-medium line-through text-gray-300">Railway Station</p>
+                <p class="text-[11px] text-gray-500 mt-0.5 font-mono">09:15 AM</p>
+              </div>
+            </div>
+            <!-- Past Stop -->
+            <div class="relative mb-8 flex items-center opacity-40">
+              <div class="absolute -left-[23.5px] w-3.5 h-3.5 rounded-full bg-[#161B22] border-[2.5px] border-gray-500 z-10"></div>
+              <div class="flex-1 ml-5">
+                <p class="text-sm font-medium line-through text-gray-300">DKS Bhawan</p>
+                <p class="text-[11px] text-gray-500 mt-0.5 font-mono">09:22 AM</p>
+              </div>
+            </div>
+            
+            <!-- Current Location Marker -->
+            <div class="relative mb-8 -ml-[19px] z-20 flex items-center gap-4">
+              <div class="w-10 h-10 rounded-full bg-[#FF2A54] border-[3px] border-[#161B22] flex items-center justify-center glow-red relative">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                <!-- pulsing ring -->
+                <div class="absolute inset-0 rounded-full border-2 border-[#FF2A54] animate-[ping_1.5s_ease-out_infinite]"></div>
+              </div>
+              <div class="bg-gradient-to-r from-[#FF2A54] to-[#E63946] px-3.5 py-1.5 rounded-lg text-xs font-bold shadow-lg flex items-center gap-2 text-white">
+                <span>Arriving at Telibandha</span>
+              </div>
+            </div>
+            
+            <!-- Upcoming Stop -->
+            <div class="relative mb-8 flex items-center group">
+              <div class="absolute -left-[23.5px] w-3.5 h-3.5 rounded-full bg-[#0D1117] border-[2.5px] border-[#00F5D4] glow-green z-10"></div>
+              <div class="flex-1 ml-5 flex justify-between items-center bg-[#161B22] border border-[#30363D] p-3 rounded-xl shadow-md group-hover:border-[#00F5D4]/30 transition-colors">
+                <div>
+                  <p class="text-sm font-bold text-[#00F5D4]">Telibandha</p>
+                  <p class="text-[11px] text-gray-400 mt-0.5 font-mono">09:30 AM <span class="text-[#00F5D4]/60 ml-1">(Est)</span></p>
+                </div>
+                <!-- Destination Alarm Icon -->
+                <button class="p-2.5 bg-[#0D1117] border border-[#30363D] rounded-full hover:border-[#00F5D4] hover:bg-[#00F5D4]/10 transition-all active:scale-90" onclick="toggleAlarm(this)">
+                  <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Upcoming Stop -->
+            <div class="relative mb-8 flex items-center">
+              <div class="absolute -left-[21px] w-2.5 h-2.5 rounded-full bg-[#0D1117] border-2 border-[#30363D] z-10"></div>
+              <div class="flex-1 ml-5 flex justify-between items-center">
+                <div>
+                  <p class="text-sm font-semibold text-white">Sector 15</p>
+                  <p class="text-[11px] text-gray-400 mt-0.5 font-mono">09:38 AM</p>
+                </div>
+                <button class="p-2 bg-transparent border border-transparent rounded-full hover:bg-[#161B22] transition-colors" onclick="toggleAlarm(this)">
+                   <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+                </button>
+              </div>
+            </div>
+            
+            <!-- Dots indicating more stops -->
+            <div class="relative mb-8 flex flex-col gap-1.5 -ml-[18px] text-[#30363D]">
+              <div class="w-1.5 h-1.5 rounded-full bg-current"></div>
+              <div class="w-1.5 h-1.5 rounded-full bg-current"></div>
+              <div class="w-1.5 h-1.5 rounded-full bg-current"></div>
+            </div>
+
+            <!-- Final Stop -->
+            <div class="relative flex items-center mt-2">
+              <div class="absolute -left-[23.5px] w-3.5 h-3.5 rounded-full bg-[#0D1117] border-[2.5px] border-[#30363D] z-10"></div>
+              <div class="flex-1 ml-5">
+                <p class="text-base font-bold text-white">HNLU</p>
+                <p class="text-[11px] text-gray-400 mt-0.5 font-mono">10:15 AM</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Map View (Hidden) -->
+  <div id="map-view" class="fixed inset-0 z-40 bg-[#0D1117] hidden pt-20">
+    <div class="absolute inset-0 opacity-40" style="background: radial-gradient(circle at center, #161B22 0%, #0D1117 100%);">
+      <div class="absolute inset-0 bg-[linear-gradient(#30363D_1px,transparent_1px),linear-gradient(90deg,#30363D_1px,transparent_1px)] bg-[size:40px_40px] opacity-30"></div>
+    </div>
+    
+    <!-- Vector Map Overlay -->
+    <svg class="absolute inset-0 w-full h-full max-w-md mx-auto" viewBox="0 0 400 800" preserveAspectRatio="xMidYMid meet">
+      <path d="M 100 150 C 200 200 250 400 150 600 S 300 700 350 750" fill="none" stroke="#30363D" stroke-width="5" stroke-dasharray="10 10"/>
+      <path d="M 100 150 C 200 200 250 400 190 480" fill="none" stroke="#00F5D4" stroke-width="7" class="glow-green" stroke-linecap="round"/>
+      
+      <!-- Nodes -->
+      <circle cx="100" cy="150" r="10" fill="#30363D" stroke="#0D1117" stroke-width="4"/>
+      <circle cx="215" cy="400" r="12" fill="#FF2A54" stroke="#0D1117" stroke-width="4" class="glow-red animate-pulse"/>
+      <circle cx="150" cy="600" r="10" fill="#0D1117" stroke="#00F5D4" stroke-width="4" class="glow-green"/>
+      <circle cx="350" cy="750" r="10" fill="#0D1117" stroke="#30363D" stroke-width="4"/>
+      
+      <!-- Labels -->
+      <text x="120" y="155" fill="#9CA3AF" font-size="14" font-weight="600" font-family="sans-serif">Railway Station</text>
+      <text x="235" y="405" fill="#FF2A54" font-size="18" font-weight="bold" font-family="sans-serif" filter="drop-shadow(0 0 8px #FF2A54)">Telibandha</text>
+      <text x="170" y="605" fill="#00F5D4" font-size="14" font-weight="600" font-family="sans-serif">Sector 15</text>
+      <text x="290" y="755" fill="#9CA3AF" font-size="14" font-weight="600" font-family="sans-serif">HNLU</text>
+      
+      <!-- Live Bus Icon -->
+      <g transform="translate(170, 440)">
+        <circle cx="20" cy="20" r="25" fill="#FF2A54" fill-opacity="0.2" class="animate-[ping_2s_infinite]"/>
+        <circle cx="20" cy="20" r="12" fill="#FF2A54" />
+        <path d="M20 8 L28 25 L12 25 Z" fill="#fff" transform="rotate(30 20 20)"/>
+      </g>
+    </svg>
+    
+    <div class="absolute top-20 left-4 right-4 z-50 max-w-md mx-auto">
+      <div class="glass-card rounded-2xl p-4 flex justify-between items-center shadow-[0_10px_30px_rgba(0,0,0,0.5)] border-t border-t-[#00F5D4]/30">
+        <div>
+          <p class="text-white font-black text-lg">BRT 04</p>
+          <p class="text-[#00F5D4] text-xs font-semibold mt-1 flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#00F5D4] animate-pulse"></span>
+            Arriving at Telibandha
+          </p>
+        </div>
+        <div class="text-right bg-[#0D1117] px-3 py-1.5 rounded-xl border border-[#30363D]">
+          <p class="text-gray-400 text-[10px] uppercase font-bold tracking-widest">ETA</p>
+          <p class="text-white font-bold text-xl">4 <span class="text-xs font-normal text-gray-400">min</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="fixed bottom-0 left-0 right-0 p-4 z-50 max-w-md mx-auto">
+    <div class="glass-card rounded-2xl p-1.5 flex justify-between items-center shadow-[0_-5px_25px_rgba(0,0,0,0.5)] bg-[#161B22]/90">
+      <button class="flex-1 flex flex-col items-center p-2.5 text-[#FF2A54] rounded-xl hover:bg-[#0D1117]/50 transition-colors" onclick="switchTab('live')">
+        <svg class="w-6 h-6 mb-1 drop-shadow-[0_0_8px_rgba(255,42,84,0.8)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span class="text-[10px] font-bold tracking-wide" id="tab-live">Live</span>
+      </button>
+      <button class="flex-1 flex flex-col items-center p-2.5 text-gray-400 hover:text-[#00F5D4] rounded-xl hover:bg-[#0D1117]/50 transition-colors" onclick="openSheet('ticket')">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/></svg>
+        <span class="text-[10px] font-bold tracking-wide" id="tab-ticket">Ticket</span>
+      </button>
+      <button class="flex-1 flex flex-col items-center p-2.5 text-gray-400 hover:text-[#00F5D4] rounded-xl hover:bg-[#0D1117]/50 transition-colors" onclick="openSheet('fare')">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+        <span class="text-[10px] font-bold tracking-wide" id="tab-fare">Fare</span>
+      </button>
+      <button class="flex-1 flex flex-col items-center p-2.5 text-gray-400 hover:text-[#00F5D4] rounded-xl hover:bg-[#0D1117]/50 transition-colors" onclick="toggleMap()" id="btn-map">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+        <span class="text-[10px] font-bold tracking-wide" id="tab-map">Map</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Bottom Sheet / Drawer -->
+  <div id="sheet-backdrop" class="fixed inset-0 bg-[#0D1117]/80 backdrop-blur-sm z-[60] hidden transition-opacity duration-300 opacity-0" onclick="closeSheet()"></div>
+
+  <div id="bottom-sheet" class="fixed bottom-0 left-0 right-0 max-w-md mx-auto glass-card z-[70] rounded-t-[2.5rem] border-t border-[#00F5D4]/40 transform translate-y-full transition-transform duration-300 p-6 pb-28 shadow-[0_-15px_50px_rgba(0,245,212,0.15)] max-h-[85vh] overflow-y-auto hidden">
+    <!-- Handle -->
+    <div class="w-14 h-1.5 bg-[#30363D] rounded-full mx-auto mb-8 cursor-pointer hover:bg-gray-500 transition-colors" onclick="closeSheet()"></div>
+    
+    <!-- Dynamic Content -->
+    <div id="sheet-content"></div>
+  </div>
+
+  <!-- Templates -->
+  <!-- Ticket Booking -->
+  <template id="tpl-ticket">
+    <div class="flex flex-col items-center">
+      <div class="w-16 h-16 rounded-full bg-[#00F5D4]/10 flex items-center justify-center mb-4">
+        <svg class="w-8 h-8 text-[#00F5D4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"/></svg>
+      </div>
+      <h3 class="text-2xl font-black text-white mb-1 tracking-tight" id="txt-book-ticket">Book Express Ticket</h3>
+      <p class="text-sm font-medium text-[#00F5D4] mb-8 bg-[#00F5D4]/10 px-4 py-1.5 rounded-full border border-[#00F5D4]/20">Railway Station → HNLU</p>
+      
+      <div class="w-full bg-[#0D1117] rounded-2xl p-5 border border-[#30363D] mb-6 shadow-inner flex justify-between items-center">
+        <span class="text-gray-400 font-semibold uppercase tracking-wider text-xs">Passengers</span>
+        <div class="flex items-center gap-5">
+          <button class="w-10 h-10 rounded-full bg-[#161B22] border border-[#30363D] flex items-center justify-center text-white hover:border-[#00F5D4] transition-colors active:scale-95" onclick="updatePax(-1)">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/></svg>
+          </button>
+          <span class="font-black text-2xl text-white w-4 text-center" id="pax-count">1</span>
+          <button class="w-10 h-10 rounded-full bg-[#161B22] border border-[#30363D] flex items-center justify-center text-[#00F5D4] hover:border-[#00F5D4] transition-colors active:scale-95 shadow-[0_0_10px_rgba(0,245,212,0.2)]" onclick="updatePax(1)">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </button>
+        </div>
+      </div>
+      
+      <div class="flex justify-between items-end w-full mb-8 px-2 border-b border-[#30363D] pb-6">
+        <span class="text-gray-400 font-semibold uppercase tracking-wider text-xs">Total Fare</span>
+        <span class="text-4xl font-black text-white tracking-tighter" id="total-fare">₹30</span>
+      </div>
+      
+      <button class="w-full bg-gradient-to-r from-[#00F5D4] to-[#00E676] text-[#0D1117] font-black py-4 rounded-2xl shadow-[0_5px_20px_rgba(0,245,212,0.4)] flex justify-center items-center gap-2 text-lg hover:brightness-110 active:scale-[0.98] transition-all" onclick="showQR()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span>Pay instantly with UPI</span>
+      </button>
+    </div>
+  </template>
+
+  <!-- Active QR Code -->
+  <template id="tpl-qr">
+    <div class="flex flex-col items-center">
+      <div class="w-full max-w-sm bg-[#0D1117] border-[2px] border-[#00F5D4] rounded-[2rem] p-8 glow-green relative overflow-hidden mb-4 shadow-2xl">
+        <!-- Animated scanline -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-[#00F5D4]/30 to-transparent w-full h-[150%] animate-[scan_2.5s_linear_infinite]"></div>
+        
+        <div class="text-center mb-6 relative z-10">
+          <div class="inline-block bg-[#00F5D4] text-[#0D1117] px-3 py-1 rounded-full text-xs font-black uppercase tracking-widest mb-3 animate-pulse">Active Ticket</div>
+          <p class="text-4xl font-black text-white tracking-widest font-mono">BRT-7X9K</p>
+        </div>
+        
+        <!-- Mock QR Code visual -->
+        <div class="w-56 h-56 mx-auto bg-white p-3 rounded-2xl relative z-10 shadow-[0_0_30px_rgba(0,245,212,0.3)]">
+          <div class="w-full h-full bg-[#0D1117] flex items-center justify-center rounded-xl relative overflow-hidden">
+            <!-- Simulated QR pattern -->
+            <div class="absolute inset-2 bg-[linear-gradient(45deg,#fff_25%,transparent_25%,transparent_75%,#fff_75%,#fff),linear-gradient(45deg,#fff_25%,transparent_25%,transparent_75%,#fff_75%,#fff)] bg-[size:16px_16px] bg-[position:0_0,8px_8px] opacity-80"></div>
+            <div class="absolute top-2 left-2 w-10 h-10 border-4 border-white"></div>
+            <div class="absolute top-2 right-2 w-10 h-10 border-4 border-white"></div>
+            <div class="absolute bottom-2 left-2 w-10 h-10 border-4 border-white"></div>
+            <div class="z-10 bg-[#FF2A54] w-12 h-12 rounded-lg flex items-center justify-center glow-red">
+               <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-8 flex justify-between items-center relative z-10 bg-[#161B22] p-4 rounded-xl border border-[#30363D]">
+          <div>
+            <p class="text-gray-400 text-[10px] font-bold uppercase tracking-widest mb-1">Expires in</p>
+            <p class="text-[#FF2A54] font-mono font-black text-xl tracking-wider" id="qr-timer">44:59</p>
+          </div>
+          <div class="w-px h-10 bg-[#30363D]"></div>
+          <div class="text-right">
+            <p class="text-gray-400 text-[10px] font-bold uppercase tracking-widest mb-1">Passengers</p>
+            <p class="text-white font-black text-xl" id="qr-pax">1</p>
+          </div>
+        </div>
+      </div>
+      <button class="text-gray-400 text-sm font-medium hover:text-white transition-colors" onclick="closeSheet()">Close Ticket</button>
+    </div>
+  </template>
+
+  <!-- Fare Chart -->
+  <template id="tpl-fare">
+    <div>
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-12 h-12 rounded-full bg-[#161B22] border border-[#30363D] flex items-center justify-center">
+          <svg class="w-6 h-6 text-[#00F5D4]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="text-2xl font-black text-white">Fare Matrix</h3>
+      </div>
+      
+      <div class="w-full bg-[#0D1117] rounded-2xl border border-[#30363D] overflow-hidden shadow-xl">
+        <table class="w-full text-sm text-left text-gray-300">
+          <thead class="text-xs text-[#00F5D4] uppercase bg-[#161B22] border-b border-[#30363D] tracking-wider">
+            <tr>
+              <th class="px-5 py-4 font-bold">Route Segment</th>
+              <th class="px-5 py-4 text-right font-bold">Fare (₹)</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-[#30363D]/50">
+            <tr class="hover:bg-[#161B22] transition-colors">
+              <td class="px-5 py-4 font-medium">Railway Station <span class="text-gray-500 mx-1">→</span> Telibandha</td>
+              <td class="px-5 py-4 text-right font-black text-white">15</td>
+            </tr>
+            <tr class="hover:bg-[#161B22] transition-colors">
+              <td class="px-5 py-4 font-medium">Railway Station <span class="text-gray-500 mx-1">→</span> Sector 15</td>
+              <td class="px-5 py-4 text-right font-black text-white">20</td>
+            </tr>
+            <tr class="hover:bg-[#161B22] transition-colors">
+              <td class="px-5 py-4 font-medium">Railway Station <span class="text-gray-500 mx-1">→</span> CBD</td>
+              <td class="px-5 py-4 text-right font-black text-white">25</td>
+            </tr>
+            <tr class="hover:bg-[#161B22] transition-colors">
+              <td class="px-5 py-4 font-medium text-[#00F5D4]">Railway Station <span class="text-gray-500 mx-1">→</span> HNLU</td>
+              <td class="px-5 py-4 text-right font-black text-[#00F5D4]">30</td>
+            </tr>
+            <tr class="bg-[#161B22]/50">
+              <td class="px-5 py-4 text-gray-400 italic text-xs flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                Inter-Sector (Within Nava Raipur)
+              </td>
+              <td class="px-5 py-4 text-right font-black text-white">10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </template>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="fixed top-24 left-0 right-0 pointer-events-none flex flex-col items-center gap-2 z-[100]"></div>
+
+  <script>
+    // i18n Data
+    const i18n = {
+      en: {
+        findBuses: "Find Buses",
+        nearestLabel: "Nearest Stop Radar",
+        liveRoute: "Live Route",
+        onboard: "I am inside this bus",
+        tabLive: "Live",
+        tabTicket: "Ticket",
+        tabFare: "Fare",
+        tabMap: "Map",
+        originPlaceholder: "Origin",
+        destPlaceholder: "Destination"
+      },
+      hi: {
+        findBuses: "बसें खोजें",
+        nearestLabel: "निकटतम स्टॉप रडार",
+        liveRoute: "लाइव रूट",
+        onboard: "मैं इस बस में हूँ",
+        tabLive: "लाइव",
+        tabTicket: "टिकट",
+        tabFare: "किराया",
+        tabMap: "मैप",
+        originPlaceholder: "प्रस्थान",
+        destPlaceholder: "गंतव्य"
+      },
+      cg: {
+        findBuses: "बस खोजव",
+        nearestLabel: "तीर के स्टॉप रडार",
+        liveRoute: "लाइव रद्दा",
+        onboard: "में हा ए बस में हंव",
+        tabLive: "लाइव",
+        tabTicket: "टिकस",
+        tabFare: "भाड़ा",
+        tabMap: "नक्शा",
+        originPlaceholder: "कहाँ ले",
+        destPlaceholder: "कहाँ बर"
+      }
+    };
+
+    // Toast Utility
+    function showToast(msg, isAlert = false) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      
+      const bgColor = isAlert ? 'bg-[#FF2A54]' : 'bg-[#00F5D4]';
+      const textColor = isAlert ? 'text-white' : 'text-[#0D1117]';
+      const shadow = isAlert ? 'shadow-[0_4px_15px_rgba(255,42,84,0.4)]' : 'shadow-[0_4px_15px_rgba(0,245,212,0.4)]';
+      
+      toast.className = `${bgColor} ${textColor} px-5 py-2.5 rounded-full ${shadow} text-sm font-bold opacity-0 transform -translate-y-4 transition-all duration-300 flex items-center gap-2 pointer-events-auto`;
+      
+      const icon = isAlert 
+        ? `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>`
+        : `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>`;
+      
+      toast.innerHTML = `${icon} <span>${msg}</span>`;
+      
+      container.appendChild(toast);
+      
+      // Animate in
+      requestAnimationFrame(() => {
+        toast.classList.remove('opacity-0', '-translate-y-4');
+        toast.classList.add('opacity-100', 'translate-y-0');
+      });
+      
+      // Remove
+      setTimeout(() => {
+        toast.classList.remove('opacity-100', 'translate-y-0');
+        toast.classList.add('opacity-0', '-translate-y-4');
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+
+    // Language Switcher
+    document.getElementById('lang-select').addEventListener('change', (e) => {
+      const dict = i18n[e.target.value];
+      document.getElementById('txt-find').innerText = dict.findBuses;
+      document.getElementById('txt-nearest-label').innerText = dict.nearestLabel;
+      document.getElementById('txt-live').innerText = dict.liveRoute;
+      document.getElementById('txt-onboard').innerText = dict.onboard;
+      document.getElementById('tab-live').innerText = dict.tabLive;
+      document.getElementById('tab-ticket').innerText = dict.tabTicket;
+      document.getElementById('tab-fare').innerText = dict.tabFare;
+      document.getElementById('tab-map').innerText = dict.tabMap;
+      document.getElementById('input-from').placeholder = dict.originPlaceholder;
+      document.getElementById('input-to').placeholder = dict.destPlaceholder;
+      
+      showToast('Language Updated');
+    });
+
+    // Swap Stations
+    window.swapStations = function() {
+      const from = document.getElementById('input-from');
+      const to = document.getElementById('input-to');
+      const temp = from.value;
+      from.value = to.value;
+      to.value = temp;
+    }
+
+    // Alarm Logic
+    window.toggleAlarm = function(btn) {
+      const isActive = btn.classList.contains('border-[#00F5D4]');
+      const svg = btn.querySelector('svg');
+      
+      if(isActive) {
+        btn.classList.remove('border-[#00F5D4]', 'bg-[#00F5D4]/10');
+        svg.classList.remove('text-[#00F5D4]');
+        svg.classList.add('text-gray-400');
+        showToast("Destination Alarm Cancelled");
+      } else {
+        const confirmMode = confirm("Set destination alarm?\n[OK] = 1 Stop Before\n[Cancel] = 500m Before");
+        const mode = confirmMode ? "1 Stop Before" : "500m Before";
+        
+        btn.classList.add('border-[#00F5D4]', 'bg-[#00F5D4]/10');
+        svg.classList.remove('text-gray-400', 'text-gray-500');
+        svg.classList.add('text-[#00F5D4]');
+        
+        showToast(`Alarm set: ${mode}`);
+      }
+    }
+
+    // Onboard Mode Switch
+    document.getElementById('btn-onboard').addEventListener('click', function() {
+      const indicator = this.querySelector('.onboard-indicator');
+      const isSwitchingOn = !this.classList.contains('border-[#00F5D4]');
+      
+      if(isSwitchingOn) {
+        this.classList.add('border-[#00F5D4]', 'bg-[#00F5D4]/10', 'text-white');
+        this.classList.remove('border-[#30363D]', 'text-gray-300');
+        indicator.classList.remove('bg-gray-500');
+        indicator.classList.add('bg-[#00F5D4]', 'animate-pulse', 'glow-green');
+        showToast('Onboard GPS Tracking Active');
+      } else {
+        this.classList.remove('border-[#00F5D4]', 'bg-[#00F5D4]/10', 'text-white');
+        this.classList.add('border-[#30363D]', 'text-gray-300');
+        indicator.classList.add('bg-gray-500');
+        indicator.classList.remove('bg-[#00F5D4]', 'animate-pulse', 'glow-green');
+        showToast('Network Tracking Active');
+      }
+    });
+
+    // Tab & Map Logic
+    let isMapMode = false;
+    window.toggleMap = function() {
+      isMapMode = !isMapMode;
+      if (isMapMode) {
+        document.getElementById('map-view').classList.remove('hidden');
+        document.getElementById('linear-view').classList.add('hidden');
+        updateTabs('map');
+      } else {
+        document.getElementById('map-view').classList.add('hidden');
+        document.getElementById('linear-view').classList.remove('hidden');
+        updateTabs('live');
+      }
+    }
+
+    window.switchTab = function(tab) {
+      if (tab === 'live') {
+        isMapMode = false;
+        document.getElementById('map-view').classList.add('hidden');
+        document.getElementById('linear-view').classList.remove('hidden');
+      }
+      updateTabs(tab);
+    }
+
+    function updateTabs(active) {
+      ['live', 'ticket', 'fare', 'map'].forEach(t => {
+        const el = document.getElementById(`tab-${t}`).parentElement;
+        if(t === active && (t === 'live' || t === 'map')) {
+          el.classList.add('text-[#FF2A54]');
+          el.classList.remove('text-gray-400');
+          const svg = el.querySelector('svg');
+          svg.classList.add('drop-shadow-[0_0_8px_rgba(255,42,84,0.8)]');
+        } else {
+          el.classList.remove('text-[#FF2A54]');
+          el.classList.add('text-gray-400');
+          const svg = el.querySelector('svg');
+          svg.classList.remove('drop-shadow-[0_0_8px_rgba(255,42,84,0.8)]');
+        }
+      });
+    }
+
+    // Bottom Sheet Logic
+    window.openSheet = function(type) {
+      document.getElementById('sheet-backdrop').classList.remove('hidden');
+      document.getElementById('bottom-sheet').classList.remove('hidden');
+      
+      // force reflow
+      void document.getElementById('bottom-sheet').offsetWidth;
+      
+      document.getElementById('sheet-backdrop').classList.add('opacity-100');
+      document.getElementById('bottom-sheet').classList.remove('translate-y-full');
+      
+      const content = document.getElementById('sheet-content');
+      const tpl = document.getElementById(`tpl-${type}`);
+      content.innerHTML = tpl.innerHTML;
+      
+      if (type === 'ticket') {
+        window.paxCount = 1;
+        updateTabs('ticket');
+      } else if (type === 'fare') {
+        updateTabs('fare');
+      }
+    }
+
+    window.closeSheet = function() {
+      document.getElementById('sheet-backdrop').classList.remove('opacity-100');
+      document.getElementById('bottom-sheet').classList.add('translate-y-full');
+      
+      // reset tabs to underlying view
+      updateTabs(isMapMode ? 'map' : 'live');
+      
+      setTimeout(() => {
+        document.getElementById('sheet-backdrop').classList.add('hidden');
+        document.getElementById('bottom-sheet').classList.add('hidden');
+        if(qrTimerInterval) clearInterval(qrTimerInterval);
+      }, 300);
+    }
+
+    // Ticket Booking Logic
+    window.paxCount = 1;
+    const baseFare = 30;
+    let qrTimerInterval;
+
+    window.updatePax = function(delta) {
+      paxCount = Math.max(1, Math.min(10, paxCount + delta));
+      document.getElementById('pax-count').innerText = paxCount;
+      document.getElementById('total-fare').innerText = '₹' + (paxCount * baseFare);
+    }
+
+    window.showQR = function() {
+      showToast('Payment Successful');
+      setTimeout(() => {
+        const content = document.getElementById('sheet-content');
+        const tpl = document.getElementById('tpl-qr');
+        content.innerHTML = tpl.innerHTML;
+        
+        document.getElementById('qr-pax').innerText = paxCount;
+        
+        // start timer
+        let timeLeft = 44 * 60 + 59;
+        const timerEl = document.getElementById('qr-timer');
+        
+        if(qrTimerInterval) clearInterval(qrTimerInterval);
+        qrTimerInterval = setInterval(() => {
+          timeLeft--;
+          if(timeLeft < 0) { 
+            clearInterval(qrTimerInterval); 
+            timerEl.innerText = "EXPIRED";
+            return; 
+          }
+          const m = Math.floor(timeLeft / 60);
+          const s = timeLeft % 60;
+          if(timerEl) timerEl.innerText = `${m}:${s < 10 ? '0'+s : s}`;
+        }, 1000);
+      }, 600);
+    }
+  </script>
+</body>
+</html>
