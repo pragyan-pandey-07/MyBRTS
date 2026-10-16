@@ -1,0 +1,18 @@
+{
+  "name": "Tatpar BRT Nava Raipur",
+  "short_name": "Tatpar BRT",
+  "description": "Live BRTS Bus Timetables, Route Planner and Fare Guide for Raipur and Nava Raipur",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D1117",
+  "theme_color": "#0D1117",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

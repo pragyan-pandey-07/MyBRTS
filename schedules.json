@@ -1,0 +1,8430 @@
+[
+  {
+    "id": "we-up-001",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "HNLU",
+    "departure_time": "07:15 AM",
+    "arrival_time": "08:55 AM",
+    "duration_mins": 100,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "07:15 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:30 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:45 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:01 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:23 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "08:26 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:29 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:32 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:35 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:36 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:40 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:43 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:45 AM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "08:48 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:53 AM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "08:55 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-002",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "06:25 AM",
+    "arrival_time": "07:48 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "06:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "06:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:38 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "06:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "06:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:48 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "06:49 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:52 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:55 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:18 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:33 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "07:48 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-003",
+    "service_type": "weekday",
+    "route_number": "205",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "HNLU",
+    "departure_time": "08:00 AM",
+    "arrival_time": "09:51 AM",
+    "duration_mins": 111,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "08:00 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:15 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:31 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:53 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:56 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "08:59 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:02 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:05 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:10 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:13 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:15 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:18 AM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "09:23 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "09:34 AM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "09:35 AM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "09:39 AM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "09:43 AM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "09:46 AM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "09:47 AM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "09:51 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-004",
+    "service_type": "weekday",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Balco Medical Centre",
+    "departure_time": "08:10 AM",
+    "arrival_time": "09:53 AM",
+    "duration_mins": 103,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "08:10 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:30 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:45 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:01 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:23 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "09:26 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:29 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:32 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:35 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:36 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:40 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:43 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:45 AM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "09:48 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "09:53 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-005",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "07:25 AM",
+    "arrival_time": "08:48 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "07:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "07:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:38 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "07:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "07:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:48 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "07:49 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:52 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:55 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:18 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:33 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "08:48 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-006",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "09:00 AM",
+    "arrival_time": "10:41 AM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "09:00 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:15 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:31 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:53 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:56 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "09:59 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:02 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:05 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:10 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:13 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:15 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "10:18 AM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "10:23 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "10:25 AM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "10:29 AM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "10:32 AM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "10:36 AM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "10:37 AM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "10:41 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-007",
+    "service_type": "weekday",
+    "route_number": "204",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "09:30 AM",
+    "arrival_time": "10:38 AM",
+    "duration_mins": 68,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "09:30 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:46 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:08 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:11 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:14 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "10:17 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:20 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:21 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:25 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:28 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:30 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:33 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "10:38 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-008",
+    "service_type": "weekday",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Balco Medical Centre",
+    "departure_time": "09:10 AM",
+    "arrival_time": "10:53 AM",
+    "duration_mins": 103,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "09:10 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:30 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:45 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:01 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:23 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "10:26 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:29 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:32 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:35 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:36 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:40 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:43 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "10:45 AM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "10:48 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "10:53 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-009",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "07:55 AM",
+    "arrival_time": "09:18 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "07:55 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "07:56 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:01 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:04 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:08 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:12 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:14 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:18 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "08:19 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:22 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:25 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:48 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:03 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "09:18 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-010",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIM",
+    "departure_time": "09:45 AM",
+    "arrival_time": "11:08 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "09:45 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:00 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:16 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:38 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:41 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "10:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:47 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:50 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:51 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:55 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:58 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:00 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:03 AM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "11:08 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-011",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "08:25 AM",
+    "arrival_time": "09:48 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "08:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:38 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:48 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "08:49 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:52 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:55 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:18 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:33 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "09:48 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-012",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIIT",
+    "departure_time": "10:00 AM",
+    "arrival_time": "11:41 AM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "10:00 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:15 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:31 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:53 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:56 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "10:59 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:02 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:05 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:10 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:13 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:15 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:18 AM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "11:23 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "11:25 AM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "11:32 AM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "11:36 AM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "11:37 AM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "11:41 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-013",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "08:40 AM",
+    "arrival_time": "10:03 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "08:40 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:41 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:46 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:49 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:51 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:53 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:57 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:59 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:03 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "09:04 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:07 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:10 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:33 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:48 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "10:03 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-014",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIM",
+    "departure_time": "10:15 AM",
+    "arrival_time": "11:38 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "10:15 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:30 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:46 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:08 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:11 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "11:14 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:17 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:20 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:21 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:25 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:28 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:30 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:33 AM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "11:38 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-015",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "08:55 AM",
+    "arrival_time": "10:18 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "08:55 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:56 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:01 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:04 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:08 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:12 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:14 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:18 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "09:19 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:22 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:25 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:48 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:03 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "10:18 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-016",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIM",
+    "departure_time": "10:30 AM",
+    "arrival_time": "11:53 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "10:30 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:45 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:01 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:23 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:26 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "11:29 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:32 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:35 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:40 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:43 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:45 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:48 AM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "11:53 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-017",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "09:10 AM",
+    "arrival_time": "10:33 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "09:10 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "09:11 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:16 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:19 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:21 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:23 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:27 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:29 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:33 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "09:34 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:37 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:40 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:03 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:18 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "10:33 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-018",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIM",
+    "departure_time": "10:45 AM",
+    "arrival_time": "12:08 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "10:45 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:00 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:16 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:38 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:41 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "11:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:47 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:50 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:51 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:55 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:58 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "12:00 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "12:03 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "12:08 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-019",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "09:25 AM",
+    "arrival_time": "10:48 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "09:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "09:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:38 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:48 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "09:49 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:52 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:55 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:18 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:33 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "10:48 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-020",
+    "service_type": "weekday",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIIT",
+    "departure_time": "11:00 AM",
+    "arrival_time": "12:41 PM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "11:00 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:15 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:31 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:53 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:56 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "11:59 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "12:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "12:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "12:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "12:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "12:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "12:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "12:18 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "12:23 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "12:25 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "12:32 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "12:36 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "12:37 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "12:41 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-021",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Balco Medical Centre",
+    "departure_time": "10:55 AM",
+    "arrival_time": "12:38 PM",
+    "duration_mins": 103,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "10:55 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:15 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:30 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:46 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "12:08 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "12:11 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "12:14 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "12:17 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "12:20 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "12:21 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "12:25 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "12:28 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "12:30 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "12:33 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "12:38 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-022",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "09:55 AM",
+    "arrival_time": "11:18 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "09:55 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "09:56 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "10:01 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:04 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:08 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:12 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:14 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:18 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "10:19 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:22 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:25 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:48 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:03 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "11:18 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-023",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIM",
+    "departure_time": "11:30 AM",
+    "arrival_time": "12:53 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "11:30 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:45 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "12:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "12:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "12:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "12:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "12:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "12:35 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "12:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "12:40 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "12:43 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "12:45 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "12:48 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "12:53 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-024",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "10:25 AM",
+    "arrival_time": "11:48 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "10:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "10:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "10:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:38 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:48 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "10:49 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:52 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:55 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:18 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:33 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "11:48 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-025",
+    "service_type": "weekday",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "12:00 PM",
+    "arrival_time": "01:41 PM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "12:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "12:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "12:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "12:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "12:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "12:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "01:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "01:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "01:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "01:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "01:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "01:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "01:18 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "01:23 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "01:25 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "01:29 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "01:32 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "01:36 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "01:37 PM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "01:41 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-026",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "10:55 AM",
+    "arrival_time": "12:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "10:55 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "10:56 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:01 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:04 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:08 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:12 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:14 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:18 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "11:19 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:22 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:25 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:48 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "12:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "12:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-027",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "12:45 PM",
+    "arrival_time": "01:53 PM",
+    "duration_mins": 68,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "12:45 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "01:01 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "01:23 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "01:26 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "01:29 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "01:32 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "01:35 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "01:36 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "01:40 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "01:43 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "01:45 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "01:48 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "01:53 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-028",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "11:25 AM",
+    "arrival_time": "12:48 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "11:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "11:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:38 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:48 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "11:49 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:52 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:55 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "12:18 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "12:33 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "12:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-029",
+    "service_type": "weekday",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "01:00 PM",
+    "arrival_time": "02:41 PM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "01:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "01:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "01:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "01:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "01:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "01:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "02:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "02:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "02:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "02:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "02:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "02:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "02:18 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "02:23 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "02:25 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "02:29 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "02:32 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "02:36 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "02:37 PM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "02:41 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-030",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "11:55 AM",
+    "arrival_time": "01:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "11:55 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "11:56 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "12:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "12:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "12:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "12:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "12:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "12:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "12:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "12:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "12:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "12:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "12:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "01:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "01:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-031",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIM",
+    "departure_time": "01:30 PM",
+    "arrival_time": "02:53 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "01:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "01:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "02:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "02:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "02:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "02:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "02:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "02:35 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "02:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "02:40 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "02:43 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "02:45 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "02:48 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "02:53 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-032",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "12:25 PM",
+    "arrival_time": "01:48 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "12:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "12:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "12:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "12:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "12:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "12:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "12:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "12:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "12:48 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "12:49 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "12:52 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "12:55 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "01:18 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "01:33 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "01:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-033",
+    "service_type": "weekday",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "02:00 PM",
+    "arrival_time": "03:41 PM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "02:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "02:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "02:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "02:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "02:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "02:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "03:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "03:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "03:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "03:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "03:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "03:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "03:18 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "03:23 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "03:25 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "03:29 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "03:32 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "03:36 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "03:37 PM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "03:41 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-034",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "12:55 PM",
+    "arrival_time": "02:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "12:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "12:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "01:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "01:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "01:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "01:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "01:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "01:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "01:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "01:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "01:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "01:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "01:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "02:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "02:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-035",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "02:30 PM",
+    "arrival_time": "03:53 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "02:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "02:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "03:23 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "03:26 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "03:29 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "03:32 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "03:35 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "03:36 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "03:40 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "03:43 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "03:45 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "03:48 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "03:53 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-036",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "01:25 PM",
+    "arrival_time": "02:48 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "01:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "01:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "01:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "01:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "01:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "01:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "01:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "01:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "01:48 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "01:49 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "01:52 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "01:55 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "02:18 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "02:33 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "02:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-037",
+    "service_type": "weekday",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "03:00 PM",
+    "arrival_time": "04:41 PM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "03:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "03:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "03:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "03:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "03:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "03:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "04:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "04:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "04:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "04:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "04:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "04:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "04:18 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "04:23 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "04:25 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "04:29 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "04:32 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "04:36 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "04:37 PM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "04:41 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-038",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "01:55 PM",
+    "arrival_time": "03:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "01:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "01:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "02:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "02:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "02:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "02:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "02:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "02:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "02:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "02:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "02:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "02:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "02:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "03:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "03:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-039",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIM",
+    "departure_time": "03:30 PM",
+    "arrival_time": "04:53 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "03:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "03:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "04:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "04:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "04:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "04:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "04:35 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "04:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "04:40 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "04:43 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "04:45 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "04:48 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "04:53 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-040",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "02:25 PM",
+    "arrival_time": "03:48 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "02:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "02:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "02:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "02:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "02:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "02:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "02:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "02:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "02:48 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "02:49 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "02:52 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "02:55 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "03:18 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "03:33 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "03:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-041",
+    "service_type": "weekday",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "04:00 PM",
+    "arrival_time": "05:41 PM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "04:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "04:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "04:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "04:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "05:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "05:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "05:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "05:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "05:18 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "05:23 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:25 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "05:29 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "05:32 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "05:36 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "05:37 PM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "05:41 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-042",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "02:55 PM",
+    "arrival_time": "04:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "02:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "02:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "03:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "03:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "03:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "03:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "03:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "03:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "03:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "03:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "03:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "03:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "03:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "04:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-043",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "04:30 PM",
+    "arrival_time": "06:11 PM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "04:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "05:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "05:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "05:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:35 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "05:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "05:40 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "05:43 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "05:45 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "05:48 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "05:53 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:55 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "05:59 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "06:02 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "06:06 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "06:07 PM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "06:11 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-044",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "03:25 PM",
+    "arrival_time": "04:48 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "03:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "03:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "03:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "03:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "03:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "03:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "03:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "03:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "03:48 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "03:49 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "03:52 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "03:55 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:18 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:33 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "04:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-045",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "05:00 PM",
+    "arrival_time": "06:41 PM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "05:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "05:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "05:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "05:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "05:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "06:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "06:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:18 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "06:23 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "06:25 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "06:29 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "06:32 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "06:36 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "06:37 PM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "06:41 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-046",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "03:55 PM",
+    "arrival_time": "05:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "03:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "03:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "04:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "04:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "04:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "04:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "04:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "04:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "04:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "04:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "04:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "04:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "05:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "05:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-047",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIM",
+    "departure_time": "05:30 PM",
+    "arrival_time": "06:53 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "05:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "05:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "06:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "06:35 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "06:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:40 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:43 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:45 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:48 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "06:53 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-048",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "04:25 PM",
+    "arrival_time": "05:48 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "04:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "04:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "04:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "04:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "04:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "04:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "04:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "04:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "04:48 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "04:49 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "04:52 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "04:55 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "05:18 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "05:33 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "05:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-049",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "HNLU",
+    "departure_time": "06:00 PM",
+    "arrival_time": "07:29 PM",
+    "duration_mins": 89,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "06:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "06:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "06:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "07:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "07:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:18 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "07:23 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "07:25 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "07:29 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-050",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "06:20 PM",
+    "arrival_time": "07:49 PM",
+    "duration_mins": 89,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "06:20 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "06:30 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:45 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:01 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:23 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "07:26 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:29 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "07:32 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "07:35 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:39 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:40 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:43 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:49 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-051",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "04:55 PM",
+    "arrival_time": "06:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "04:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "04:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "05:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "05:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "05:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "05:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "05:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "05:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "05:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "05:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "06:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "06:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-052",
+    "service_type": "weekday",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIM",
+    "departure_time": "07:00 PM",
+    "arrival_time": "08:24 PM",
+    "duration_mins": 84,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "07:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "07:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:09 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:19 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:20 PM"
+      },
+      {
+        "stop_name": "IIM",
+        "time": "08:24 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-053",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "05:10 PM",
+    "arrival_time": "06:33 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "05:10 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:11 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "05:16 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "05:19 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "05:21 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "05:23 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "05:27 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:33 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "05:34 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:37 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "05:40 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:03 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "06:18 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "06:33 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-054",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 29",
+    "departure_time": "07:30 PM",
+    "arrival_time": "08:49 PM",
+    "duration_mins": 79,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "07:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "08:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:35 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:39 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:40 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:43 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:49 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-055",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "05:25 PM",
+    "arrival_time": "06:48 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "05:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "05:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "05:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "05:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "05:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "05:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:48 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "05:49 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:52 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "05:55 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:18 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "06:33 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "06:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-056",
+    "service_type": "weekday",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 29",
+    "departure_time": "08:00 PM",
+    "arrival_time": "09:19 PM",
+    "duration_mins": 79,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "08:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "08:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:09 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:19 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-057",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "05:55 PM",
+    "arrival_time": "07:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "05:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "06:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "06:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "06:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "07:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-058",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 29",
+    "departure_time": "08:30 PM",
+    "arrival_time": "09:49 PM",
+    "duration_mins": 79,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "08:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "09:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:35 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:39 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:40 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:43 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:49 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-059",
+    "service_type": "weekday",
+    "route_number": "105",
+    "direction": "HNLU to Railway Station",
+    "origin": "Balco Medical Centre",
+    "destination": "Railway Station",
+    "departure_time": "05:55 PM",
+    "arrival_time": "07:32 PM",
+    "duration_mins": 97,
+    "stops": [
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:55 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:09 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:18 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:20 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:22 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "06:26 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "06:28 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:32 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "06:33 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:36 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:39 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:02 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:17 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "07:32 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-060",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "06:25 PM",
+    "arrival_time": "07:48 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "06:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "06:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "06:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "06:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:48 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "06:49 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:52 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:55 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:18 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:33 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "07:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-061",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "06:55 PM",
+    "arrival_time": "08:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "06:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "06:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "07:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "07:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "07:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "08:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-062",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "07:25 PM",
+    "arrival_time": "08:48 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "07:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "07:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "07:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "07:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:48 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "07:49 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:52 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:55 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:18 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:33 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "08:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-063",
+    "service_type": "weekday",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 29",
+    "departure_time": "09:00 PM",
+    "arrival_time": "10:19 PM",
+    "duration_mins": 79,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "09:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "09:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:09 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:19 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-064",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "07:55 PM",
+    "arrival_time": "09:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "07:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "07:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "08:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "09:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-065",
+    "service_type": "weekday",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 29",
+    "departure_time": "09:30 PM",
+    "arrival_time": "10:49 PM",
+    "duration_mins": 79,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "09:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "10:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:35 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:39 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:40 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:43 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:49 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-066",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "08:25 PM",
+    "arrival_time": "09:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "08:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:42 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "08:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "09:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-067",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "08:55 PM",
+    "arrival_time": "10:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "08:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:18 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "09:19 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:22 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:25 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "10:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-068",
+    "service_type": "weekday",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "09:25 PM",
+    "arrival_time": "10:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "09:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "09:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:42 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "09:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "10:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-069",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "07:45 AM",
+    "arrival_time": "09:15 AM",
+    "duration_mins": 90,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "07:45 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:00 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:15 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:31 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:53 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:56 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:59 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "09:02 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:05 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:06 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:10 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:13 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "09:15 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-070",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Mahanadi Bhawan",
+    "departure_time": "09:18 AM",
+    "arrival_time": "09:46 AM",
+    "duration_mins": 28,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "09:18 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:28 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:30 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:34 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:37 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "09:41 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:46 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-071",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "07:25 AM",
+    "arrival_time": "08:40 AM",
+    "duration_mins": 75,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "07:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "07:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:38 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:40 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "07:41 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:44 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:47 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:10 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:25 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "08:40 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-072",
+    "service_type": "weekend",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "HNLU",
+    "departure_time": "09:00 AM",
+    "arrival_time": "10:41 AM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "09:00 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:15 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:31 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:53 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:56 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "09:59 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:02 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:05 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:10 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:13 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:15 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "10:18 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "10:23 AM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "10:25 AM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "10:29 AM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "10:32 AM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "10:36 AM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "10:37 AM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "10:41 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-073",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "09:15 AM",
+    "arrival_time": "10:45 AM",
+    "duration_mins": 90,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "09:15 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "09:30 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:45 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:01 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:23 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:26 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:29 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "10:32 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:35 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:36 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:40 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:43 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "10:45 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-074",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Mahanadi Bhawan",
+    "departure_time": "10:48 AM",
+    "arrival_time": "11:11 AM",
+    "duration_mins": 23,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "10:48 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:53 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:55 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:59 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "01:02 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "11:06 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:07 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:11 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-075",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "08:25 AM",
+    "arrival_time": "09:42 AM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "08:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:38 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:40 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "08:43 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:46 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:49 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:12 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:27 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "09:42 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-076",
+    "service_type": "weekend",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "10:00 AM",
+    "arrival_time": "11:41 AM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "10:00 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:15 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:31 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:53 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:56 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "10:59 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:02 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:05 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:10 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:13 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:15 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:18 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "11:23 AM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "11:25 AM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "11:32 AM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "11:36 AM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "11:37 AM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "11:41 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-077",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "08:55 AM",
+    "arrival_time": "10:12 AM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "08:55 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:56 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:01 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:04 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:08 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:10 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "09:13 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:16 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:19 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:42 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:57 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "10:12 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-078",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Muktangan",
+    "departure_time": "10:30 AM",
+    "arrival_time": "12:11 PM",
+    "duration_mins": 101,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "10:30 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:45 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:01 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:23 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:26 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "11:29 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:32 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:35 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:40 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:43 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:45 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:48 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "11:53 AM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "11:55 AM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "12:02 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "12:06 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "12:07 PM"
+      },
+      {
+        "stop_name": "Muktangan",
+        "time": "12:11 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-079",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "09:25 AM",
+    "arrival_time": "10:48 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "09:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "09:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:38 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:48 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "09:49 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:52 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:55 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:18 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "10:33 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "10:48 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-080",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Jungle Safari",
+    "departure_time": "11:00 AM",
+    "arrival_time": "12:34 PM",
+    "duration_mins": 94,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "11:00 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:15 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:31 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:53 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:56 AM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "11:59 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "12:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "12:03 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "12:07 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "12:08 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "12:11 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "12:17 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "12:18 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "12:22 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "12:26 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "12:30 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "12:34 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-081",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "09:55 AM",
+    "arrival_time": "11:18 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "09:55 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "09:56 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "10:01 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:04 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:08 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:12 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:14 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:18 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "10:19 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:22 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:25 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "10:48 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:03 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "11:18 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-082",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Jungle Safari",
+    "departure_time": "11:30 AM",
+    "arrival_time": "01:04 PM",
+    "duration_mins": 94,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "11:30 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:45 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "12:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "12:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "12:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "12:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "12:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "12:33 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "12:37 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "12:38 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "12:41 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "12:47 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "12:48 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "12:52 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "12:56 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "01:00 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "01:04 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-083",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "10:25 AM",
+    "arrival_time": "11:48 AM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "10:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "10:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "10:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:38 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:48 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "10:49 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "10:52 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "10:55 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:18 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "11:33 AM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "11:48 AM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-084",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIIT",
+    "departure_time": "12:00 PM",
+    "arrival_time": "01:34 PM",
+    "duration_mins": 94,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "12:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "12:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "12:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "12:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "12:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "12:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "01:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "01:03 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "01:07 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "01:08 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "01:11 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "01:17 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "01:18 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "01:22 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "01:26 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "01:29 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "01:30 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "01:34 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-085",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "10:55 AM",
+    "arrival_time": "12:18 PM",
+    "duration_mins": 83,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "10:55 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "10:56 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:01 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:04 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:06 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:08 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:12 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:14 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:18 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "11:19 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:22 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:25 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "11:48 AM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "12:03 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "12:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-086",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Jungle Safari",
+    "departure_time": "12:30 PM",
+    "arrival_time": "02:00 PM",
+    "duration_mins": 90,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "12:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "12:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "01:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "01:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "01:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "01:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "01:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "01:33 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "01:37 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "01:38 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "01:41 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "01:47 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "01:48 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "01:52 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "01:56 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "01:59 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "02:00 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-087",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "11:25 AM",
+    "arrival_time": "12:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "11:25 AM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "11:26 AM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "11:31 AM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "11:34 AM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "11:36 AM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "11:38 AM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "11:42 AM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "11:44 AM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "11:42 AM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "11:43 AM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "11:46 AM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "11:49 AM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "12:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "12:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "12:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-088",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIIT",
+    "departure_time": "01:00 PM",
+    "arrival_time": "02:34 PM",
+    "duration_mins": 94,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "01:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "01:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "01:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "01:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "01:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "01:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "02:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "02:03 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "02:07 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "02:08 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "02:11 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "02:17 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "02:18 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "02:22 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "02:26 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "02:29 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "02:30 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "02:34 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-089",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "12:25 PM",
+    "arrival_time": "01:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "12:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "12:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "12:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "12:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "12:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "12:38 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "12:40 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "12:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "12:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "12:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "01:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "01:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "01:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-090",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIIT",
+    "departure_time": "02:00 PM",
+    "arrival_time": "03:34 PM",
+    "duration_mins": 94,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "02:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "02:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "02:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "02:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "02:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "02:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "03:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "03:03 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "03:07 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "03:08 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "03:11 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "03:17 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "03:18 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "03:22 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "03:26 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "03:29 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "03:30 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "03:34 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-091",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "01:25 PM",
+    "arrival_time": "02:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "01:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "01:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "01:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "01:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "01:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "01:38 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "01:40 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "01:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "01:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "01:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "02:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "02:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "02:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-092",
+    "service_type": "weekend",
+    "route_number": "202",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "IIIT",
+    "departure_time": "03:00 PM",
+    "arrival_time": "04:34 PM",
+    "duration_mins": 94,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "03:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "03:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "03:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "03:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "03:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "03:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "04:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "04:03 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "04:07 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "04:08 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "04:11 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "04:17 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "04:18 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "04:22 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "04:26 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "04:29 PM"
+      },
+      {
+        "stop_name": "Jungle Safari",
+        "time": "04:30 PM"
+      },
+      {
+        "stop_name": "IIIT",
+        "time": "04:34 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-093",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "03:15 PM",
+    "arrival_time": "04:45 PM",
+    "duration_mins": 90,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "03:15 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "03:30 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "03:45 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "04:01 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "04:23 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "04:26 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "04:29 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "04:32 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "04:35 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "04:36 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:40 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:43 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "04:45 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-094",
+    "service_type": "weekend",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Mahanadi Bhawan",
+    "departure_time": "04:48 PM",
+    "arrival_time": "05:11 PM",
+    "duration_mins": 23,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "04:48 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:53 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:55 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "04:59 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:02 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "05:06 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:07 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:11 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-095",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "02:25 PM",
+    "arrival_time": "03:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "02:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "02:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "02:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "02:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "02:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "02:38 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "02:40 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "02:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "02:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "02:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "03:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "03:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "03:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-096",
+    "service_type": "weekend",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "HNLU",
+    "departure_time": "04:00 PM",
+    "arrival_time": "05:25 PM",
+    "duration_mins": 85,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "04:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "04:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "04:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "04:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "05:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "05:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "05:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "05:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "05:18 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:23 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "05:25 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-097",
+    "service_type": "weekend",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "HNLU Gate",
+    "departure_time": "04:15 PM",
+    "arrival_time": "05:55 PM",
+    "duration_mins": 100,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "04:15 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:30 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:45 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "05:01 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:23 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "05:26 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:29 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:32 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "05:35 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "05:36 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "05:40 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "05:43 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "05:45 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:48 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "05:53 PM"
+      },
+      {
+        "stop_name": "HNLU Gate",
+        "time": "05:55 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-098",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "03:25 PM",
+    "arrival_time": "04:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "03:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "03:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "03:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "03:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "03:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "03:38 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "03:40 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "03:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "03:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "03:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "04:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-099",
+    "service_type": "weekend",
+    "route_number": "201",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "HNLU",
+    "departure_time": "05:00 PM",
+    "arrival_time": "06:25 PM",
+    "duration_mins": 85,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "05:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "05:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "05:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "05:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "05:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "06:05 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "06:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:10 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:13 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:15 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:18 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "06:23 PM"
+      },
+      {
+        "stop_name": "HNLU",
+        "time": "06:25 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-100",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "03:55 PM",
+    "arrival_time": "05:12 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "03:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "03:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "04:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "04:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "04:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "04:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "04:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "04:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "04:12 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "04:13 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "04:16 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "04:19 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "04:42 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "04:57 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "05:12 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-101",
+    "service_type": "weekend",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "05:30 PM",
+    "arrival_time": "06:47 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "05:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "05:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "06:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "06:32 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "06:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:37 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:40 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:46 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:47 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-102",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "04:25 PM",
+    "arrival_time": "05:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "04:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "04:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "04:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "04:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "04:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "04:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "04:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "04:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "04:42 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "04:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "04:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "04:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "05:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "05:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "05:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-103",
+    "service_type": "weekend",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "06:00 PM",
+    "arrival_time": "07:18 PM",
+    "duration_mins": 78,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "06:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "06:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "06:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "07:03 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "07:07 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:08 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:11 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:17 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-104",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "04:55 PM",
+    "arrival_time": "06:12 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "04:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "04:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "05:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "05:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "05:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "05:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "05:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:12 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "05:13 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:16 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "05:19 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "05:42 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "05:57 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "06:12 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-105",
+    "service_type": "weekend",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "06:30 PM",
+    "arrival_time": "07:48 PM",
+    "duration_mins": 78,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "06:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "06:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "07:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "07:33 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "07:37 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:38 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:41 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:47 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-106",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "05:25 PM",
+    "arrival_time": "06:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "05:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "05:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "05:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "05:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "05:38 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "05:42 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "05:44 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "05:42 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "05:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "05:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "05:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "06:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "06:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-107",
+    "service_type": "weekend",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "07:00 PM",
+    "arrival_time": "08:18 PM",
+    "duration_mins": 78,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "07:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "07:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:03 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:07 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:08 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:11 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:17 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-108",
+    "service_type": "weekend",
+    "route_number": "101",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "05:55 PM",
+    "arrival_time": "07:12 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "05:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "05:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:08 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "06:12 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "06:14 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:12 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "06:13 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:16 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:19 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "06:42 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "06:57 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "07:12 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-109",
+    "service_type": "weekend",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "07:30 PM",
+    "arrival_time": "08:48 PM",
+    "duration_mins": 78,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "07:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "08:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "08:33 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "08:37 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:38 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:41 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:47 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-110",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "06:25 PM",
+    "arrival_time": "07:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "06:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "06:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "06:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "06:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "06:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "06:38 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "06:40 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "06:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "06:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "06:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "07:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-111",
+    "service_type": "weekend",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "08:00 PM",
+    "arrival_time": "09:18 PM",
+    "duration_mins": 78,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "08:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "08:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:03 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:07 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:08 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:11 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:17 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-112",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "06:55 PM",
+    "arrival_time": "08:12 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "06:55 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "06:56 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:01 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:04 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:06 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:08 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:10 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "07:13 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:16 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:19 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "07:42 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "07:57 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "08:12 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-113",
+    "service_type": "weekend",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "08:30 PM",
+    "arrival_time": "09:48 PM",
+    "duration_mins": 78,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "08:30 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:45 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:01 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:23 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:26 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "09:29 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "09:32 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "09:33 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "09:37 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "09:38 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "09:41 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "09:47 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "09:48 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-114",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "07:25 PM",
+    "arrival_time": "08:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "07:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "07:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "07:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "07:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "07:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "07:38 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "07:40 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "07:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "07:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "07:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "08:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "08:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "08:42 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-up-115",
+    "service_type": "weekend",
+    "route_number": "203",
+    "direction": "Railway Station to HNLU",
+    "origin": "Railway Station",
+    "destination": "Sector 30",
+    "departure_time": "09:00 PM",
+    "arrival_time": "10:18 PM",
+    "duration_mins": 78,
+    "stops": [
+      {
+        "stop_name": "Railway Station",
+        "time": "09:00 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:15 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:31 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "09:53 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "09:56 PM"
+      },
+      {
+        "stop_name": "Ekatm Path",
+        "time": "09:59 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "10:02 PM"
+      },
+      {
+        "stop_name": "Mahanadi Bhawan",
+        "time": "10:03 PM"
+      },
+      {
+        "stop_name": "Indravati Bhawan",
+        "time": "10:07 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "10:08 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "10:11 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "10:17 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "10:18 PM"
+      }
+    ]
+  },
+  {
+    "id": "we-dn-116",
+    "service_type": "weekend",
+    "route_number": "102",
+    "direction": "HNLU to Railway Station",
+    "origin": "HNLU",
+    "destination": "Railway Station",
+    "departure_time": "08:25 PM",
+    "arrival_time": "09:42 PM",
+    "duration_mins": 77,
+    "stops": [
+      {
+        "stop_name": "HNLU",
+        "time": "08:25 PM"
+      },
+      {
+        "stop_name": "Balco Medical Centre",
+        "time": "08:26 PM"
+      },
+      {
+        "stop_name": "Sector 30",
+        "time": "08:31 PM"
+      },
+      {
+        "stop_name": "Sector 29",
+        "time": "08:34 PM"
+      },
+      {
+        "stop_name": "Sector 27",
+        "time": "08:36 PM"
+      },
+      {
+        "stop_name": "South Block",
+        "time": "08:38 PM"
+      },
+      {
+        "stop_name": "North Block",
+        "time": "08:40 PM"
+      },
+      {
+        "stop_name": "Ekatm path",
+        "time": "08:43 PM"
+      },
+      {
+        "stop_name": "CBD",
+        "time": "08:46 PM"
+      },
+      {
+        "stop_name": "Sector 15",
+        "time": "08:49 PM"
+      },
+      {
+        "stop_name": "Telibandha",
+        "time": "09:12 PM"
+      },
+      {
+        "stop_name": "DKS Bhawan",
+        "time": "09:27 PM"
+      },
+      {
+        "stop_name": "Railway Station",
+        "time": "09:42 PM"
+      }
+    ]
+  }
+]
