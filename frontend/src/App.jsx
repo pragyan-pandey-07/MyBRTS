@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import LiveTracking from './pages/LiveTracking';
 import ScheduleView from './pages/ScheduleView';
 import BottomNav from './components/BottomNav';
 import Header from './components/Header';
 import BottomSheet from './components/BottomSheet';
+import ThemeSelectorModal from './components/ThemeSelectorModal';
 
 function App() {
   const [lang, setLang] = useState('en');
   const [sheet, setSheet] = useState(null); // 'fare' or null
   const [view, setView] = useState('linear'); // 'linear', 'schedule', or 'map'
+
+  // Dark & Light Mode and Theme Palette State
+  const [mode, setMode] = useState(() => localStorage.getItem('theme_mode') || 'dark');
+  const [colorTheme, setColorTheme] = useState(() => localStorage.getItem('theme_color') || 'neon');
+  const [isThemeOpen, setIsThemeOpen] = useState(false);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-mode', mode);
+    document.documentElement.setAttribute('data-theme', `${colorTheme}-${mode}`);
+    localStorage.setItem('theme_mode', mode);
+    localStorage.setItem('theme_color', colorTheme);
+  }, [mode, colorTheme]);
 
   return (
     <Router>
@@ -24,7 +37,13 @@ function App() {
           </svg>
         </div>
 
-        <Header lang={lang} setLang={setLang} />
+        <Header
+          lang={lang}
+          setLang={setLang}
+          mode={mode}
+          setMode={setMode}
+          onOpenTheme={() => setIsThemeOpen(true)}
+        />
         
         <main className="pb-16">
           {view === 'schedule' ? (
@@ -37,6 +56,16 @@ function App() {
         <BottomNav setSheet={setSheet} view={view} setView={setView} lang={lang} />
         
         <BottomSheet sheet={sheet} setSheet={setSheet} lang={lang} />
+
+        <ThemeSelectorModal
+          isOpen={isThemeOpen}
+          onClose={() => setIsThemeOpen(false)}
+          mode={mode}
+          setMode={setMode}
+          colorTheme={colorTheme}
+          setColorTheme={setColorTheme}
+          lang={lang}
+        />
       </div>
     </Router>
   );
