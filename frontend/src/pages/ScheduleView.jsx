@@ -1,5 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import rawSchedules from '../data/schedules.json';
+import { t, getStationDisplayName } from '../utils/translations';
 
 export default function ScheduleView({ lang = 'en' }) {
   const [day, setDay] = useState('weekday'); // 'weekday' or 'weekend'
@@ -9,24 +10,23 @@ export default function ScheduleView({ lang = 'en' }) {
 
   // Available routes for chosen day & direction
   const filteredTrips = useMemo(() => {
-    return rawSchedules.filter(t => {
-      if (t.service_type !== day) return false;
-      if (direction && !t.direction.toLowerCase().includes(direction.toLowerCase().split(' ')[0])) {
-        // Match direction loosely
-        if (direction.startsWith('HNLU') && !t.direction.startsWith('HNLU')) return false;
-        if (direction.startsWith('Railway') && !t.direction.startsWith('Railway')) return false;
+    return rawSchedules.filter(tItem => {
+      if (tItem.service_type !== day) return false;
+      if (direction && !tItem.direction.toLowerCase().includes(direction.toLowerCase().split(' ')[0])) {
+        if (direction.startsWith('HNLU') && !tItem.direction.startsWith('HNLU')) return false;
+        if (direction.startsWith('Railway') && !tItem.direction.startsWith('Railway')) return false;
       }
-      if (selectedRoute !== 'ALL' && t.route_number !== selectedRoute) return false;
+      if (selectedRoute !== 'ALL' && tItem.route_number !== selectedRoute) return false;
       return true;
     });
   }, [day, direction, selectedRoute]);
 
   const availableRoutes = useMemo(() => {
     const rSet = new Set();
-    rawSchedules.forEach(t => {
-      if (t.service_type === day) {
-        if (direction.startsWith('HNLU') && t.direction.startsWith('HNLU')) rSet.add(t.route_number);
-        if (direction.startsWith('Railway') && t.direction.startsWith('Railway')) rSet.add(t.route_number);
+    rawSchedules.forEach(tItem => {
+      if (tItem.service_type === day) {
+        if (direction.startsWith('HNLU') && tItem.direction.startsWith('HNLU')) rSet.add(tItem.route_number);
+        if (direction.startsWith('Railway') && tItem.direction.startsWith('Railway')) rSet.add(tItem.route_number);
       }
     });
     return Array.from(rSet).sort();
@@ -43,9 +43,9 @@ export default function ScheduleView({ lang = 'en' }) {
         <div>
           <h2 className="text-lg font-black text-white flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-[#00F5D4] glow-green"></span>
-            Official Bus Timetable
+            {t('timetableTitle', lang)}
           </h2>
-          <p className="text-xs text-gray-400">Tatpar BRT Lite Service</p>
+          <p className="text-xs text-gray-400">{t('timetableSubtitle', lang)}</p>
         </div>
         
         {/* Day toggle */}
@@ -54,13 +54,13 @@ export default function ScheduleView({ lang = 'en' }) {
             onClick={() => { setDay('weekday'); setSelectedRoute('ALL'); }}
             className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${day === 'weekday' ? 'bg-[#FF2A54] text-white glow-red' : 'text-gray-400 hover:text-white'}`}
           >
-            Weekday
+            {day === 'weekday' && lang !== 'en' ? 'सोम-शुक्र' : t('weekday', lang)}
           </button>
           <button
             onClick={() => { setDay('weekend'); setSelectedRoute('ALL'); }}
             className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${day === 'weekend' ? 'bg-[#FF2A54] text-white glow-red' : 'text-gray-400 hover:text-white'}`}
           >
-            Weekend
+            {day === 'weekend' && lang !== 'en' ? 'शनि-रवि' : t('weekend', lang)}
           </button>
         </div>
       </div>
@@ -71,15 +71,19 @@ export default function ScheduleView({ lang = 'en' }) {
           onClick={() => { setDirection('Railway Station to HNLU'); setSelectedRoute('ALL'); }}
           className={`p-3 rounded-xl border text-xs font-bold flex flex-col items-center gap-1 transition-all ${direction.startsWith('Railway') ? 'border-[#00F5D4] bg-[#00F5D4]/10 text-white shadow-[0_0_15px_rgba(0,245,212,0.15)]' : 'border-[#30363D] bg-[#161B22]/70 text-gray-400 hover:text-white'}`}
         >
-          <span className="text-[10px] uppercase tracking-wider text-gray-400">Up Route</span>
-          <span>Railway Stn ➔ HNLU</span>
+          <span className="text-[10px] uppercase tracking-wider text-gray-400">
+            {lang === 'hi' ? 'अप रूट' : lang === 'cg' ? 'जावत रूट' : 'Up Route'}
+          </span>
+          <span className="text-center">{t('toNavaRaipur', lang)}</span>
         </button>
         <button
           onClick={() => { setDirection('HNLU to Railway Station'); setSelectedRoute('ALL'); }}
           className={`p-3 rounded-xl border text-xs font-bold flex flex-col items-center gap-1 transition-all ${direction.startsWith('HNLU') ? 'border-[#00F5D4] bg-[#00F5D4]/10 text-white shadow-[0_0_15px_rgba(0,245,212,0.15)]' : 'border-[#30363D] bg-[#161B22]/70 text-gray-400 hover:text-white'}`}
         >
-          <span className="text-[10px] uppercase tracking-wider text-gray-400">Down Route</span>
-          <span>HNLU ➔ Railway Stn</span>
+          <span className="text-[10px] uppercase tracking-wider text-gray-400">
+            {lang === 'hi' ? 'डाउन रूट' : lang === 'cg' ? 'आवत रूट' : 'Down Route'}
+          </span>
+          <span className="text-center">{t('toRaipur', lang)}</span>
         </button>
       </div>
 
@@ -89,7 +93,7 @@ export default function ScheduleView({ lang = 'en' }) {
           onClick={() => setSelectedRoute('ALL')}
           className={`px-3 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-colors border ${selectedRoute === 'ALL' ? 'bg-[#00F5D4] text-[#0D1117] border-[#00F5D4]' : 'bg-[#161B22] text-gray-400 border-[#30363D] hover:text-white'}`}
         >
-          All Routes ({filteredTrips.length})
+          {t('allRoutes', lang)} ({filteredTrips.length})
         </button>
         {availableRoutes.map(rNum => (
           <button
@@ -97,7 +101,7 @@ export default function ScheduleView({ lang = 'en' }) {
             onClick={() => setSelectedRoute(rNum)}
             className={`px-3 py-1.5 rounded-full text-xs font-bold whitespace-nowrap transition-colors border ${selectedRoute === rNum ? 'bg-[#00F5D4] text-[#0D1117] border-[#00F5D4]' : 'bg-[#161B22] text-gray-400 border-[#30363D] hover:text-white'}`}
           >
-            Route {rNum}
+            {lang === 'hi' ? `रूट ${rNum}` : lang === 'cg' ? `रूट ${rNum}` : `Route ${rNum}`}
           </button>
         ))}
       </div>
@@ -106,7 +110,7 @@ export default function ScheduleView({ lang = 'en' }) {
       <div className="flex flex-col gap-3">
         {filteredTrips.length === 0 ? (
           <div className="glass-card rounded-2xl p-6 text-center text-gray-400">
-            No scheduled departures found for this filter.
+            {t('noBusesFound', lang)}
           </div>
         ) : (
           filteredTrips.map((trip) => {
@@ -133,15 +137,19 @@ export default function ScheduleView({ lang = 'en' }) {
                         <span className="text-sm font-bold text-gray-300">{trip.arrival_time}</span>
                       </div>
                       <p className="text-[11px] text-gray-400 mt-0.5">
-                        {trip.origin} to {trip.destination}
+                        {getStationDisplayName(trip.origin, lang)} ➔ {getStationDisplayName(trip.destination, lang)}
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-2">
                     <div className="text-right">
-                      <span className="text-xs font-bold text-[#00F5D4] block">{trip.duration_mins}m</span>
-                      <span className="text-[10px] text-gray-500">{trip.stops?.length || 0} stops</span>
+                      <span className="text-xs font-bold text-[#00F5D4] block">
+                        {trip.duration_mins} {t('mins', lang)}
+                      </span>
+                      <span className="text-[10px] text-gray-500">
+                        {trip.stops?.length || 0} {t('intermediateStops', lang)}
+                      </span>
                     </div>
                     <svg
                       className={`w-4 h-4 text-gray-400 transition-transform ${isExpanded ? 'rotate-180 text-[#00F5D4]' : ''}`}
@@ -154,27 +162,23 @@ export default function ScheduleView({ lang = 'en' }) {
                   </div>
                 </div>
 
-                {/* Expanded Stops Timeline */}
+                {/* Expanded Stop Timings */}
                 {isExpanded && (
-                  <div className="px-5 pb-5 pt-2 bg-[#0D1117]/60 border-t border-[#30363D]">
-                    <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3">
-                      Complete Stop Timetable
-                    </p>
-                    <div className="relative pl-5 border-l-2 border-[#30363D] ml-2 space-y-3">
-                      {trip.stops.map((stop, sIdx) => {
-                        const isFirst = sIdx === 0;
-                        const isLast = sIdx === trip.stops.length - 1;
+                  <div className="px-4 pb-4 pt-2 bg-[#0D1117]/80 border-t border-[#30363D]">
+                    <div className="relative pl-5 border-l-2 border-[#30363D] ml-2 space-y-2 mt-1">
+                      {trip.stops && trip.stops.map((st, sIdx) => {
+                        const isStart = sIdx === 0;
+                        const isEnd = sIdx === trip.stops.length - 1;
                         return (
-                          <div key={sIdx} className="relative flex items-center justify-between text-xs">
-                            {/* Bullet */}
+                          <div key={sIdx} className="relative flex justify-between items-center text-xs">
                             <div
-                              className={`absolute -left-[27px] w-3 h-3 rounded-full border-2 ${isFirst ? 'bg-[#00F5D4] border-[#0D1117] glow-green' : isLast ? 'bg-[#FF2A54] border-[#0D1117] glow-red' : 'bg-[#161B22] border-gray-600'}`}
+                              className={`absolute -left-[27px] w-3 h-3 rounded-full border-2 ${isStart ? 'bg-[#00F5D4] border-[#0D1117]' : isEnd ? 'bg-[#FF2A54] border-[#0D1117]' : 'bg-[#161B22] border-gray-600'}`}
                             ></div>
-                            <span className={`font-medium ${isFirst || isLast ? 'text-white font-bold' : 'text-gray-300'}`}>
-                              {stop.stop_name}
+                            <span className={isStart || isEnd ? 'text-white font-bold' : 'text-gray-300'}>
+                              {getStationDisplayName(st.stop_name, lang)}
                             </span>
-                            <span className="font-mono text-[11px] text-[#00F5D4]">
-                              {stop.time}
+                            <span className="font-mono text-[11px] text-[#00F5D4] font-semibold">
+                              {st.time}
                             </span>
                           </div>
                         );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { t, getStationDisplayName } from '../utils/translations';
 
 export default function BottomSheet({ sheet, setSheet, lang = 'en' }) {
   if (!sheet) return null;
@@ -31,8 +32,8 @@ export default function BottomSheet({ sheet, setSheet, lang = 'en' }) {
                 </svg>
               </div>
               <div>
-                <h3 className="text-xl font-black text-white">Official Fare Matrix</h3>
-                <p className="text-xs text-gray-400">Standard BRTS Tariff</p>
+                <h3 className="text-xl font-black text-white">{t('fareMatrixTitle', lang)}</h3>
+                <p className="text-xs text-gray-400">{t('fareMatrixSubtitle', lang)}</p>
               </div>
             </div>
 
@@ -40,30 +41,38 @@ export default function BottomSheet({ sheet, setSheet, lang = 'en' }) {
               <table className="w-full text-xs text-left text-gray-300">
                 <thead className="text-[10px] text-[#00F5D4] uppercase bg-[#161B22] border-b border-[#30363D] tracking-wider">
                   <tr>
-                    <th className="px-4 py-3 font-bold">Route Segment</th>
-                    <th className="px-4 py-3 text-right font-bold">Fare (₹)</th>
+                    <th className="px-4 py-3 font-bold">{t('routeSegment', lang)}</th>
+                    <th className="px-4 py-3 text-right font-bold">{t('fareAmount', lang)}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#30363D]/50">
                   <tr className="hover:bg-[#161B22] transition-colors">
-                    <td className="px-4 py-3 font-medium">Railway Station <span className="text-gray-500 mx-1">➔</span> Telibandha</td>
+                    <td className="px-4 py-3 font-medium">
+                      {getStationDisplayName('Railway Station', lang)} <span className="text-gray-500 mx-1">➔</span> {getStationDisplayName('Telibandha', lang)}
+                    </td>
                     <td className="px-4 py-3 text-right font-black text-white">₹15</td>
                   </tr>
                   <tr className="hover:bg-[#161B22] transition-colors">
-                    <td className="px-4 py-3 font-medium">Railway Station <span className="text-gray-500 mx-1">➔</span> Sector 15</td>
+                    <td className="px-4 py-3 font-medium">
+                      {getStationDisplayName('Railway Station', lang)} <span className="text-gray-500 mx-1">➔</span> {getStationDisplayName('Sector 15', lang)}
+                    </td>
                     <td className="px-4 py-3 text-right font-black text-white">₹20</td>
                   </tr>
                   <tr className="hover:bg-[#161B22] transition-colors">
-                    <td className="px-4 py-3 font-medium">Railway Station <span className="text-gray-500 mx-1">➔</span> CBD</td>
+                    <td className="px-4 py-3 font-medium">
+                      {getStationDisplayName('Railway Station', lang)} <span className="text-gray-500 mx-1">➔</span> {getStationDisplayName('CBD', lang)}
+                    </td>
                     <td className="px-4 py-3 text-right font-black text-white">₹25</td>
                   </tr>
                   <tr className="hover:bg-[#161B22] transition-colors">
-                    <td className="px-4 py-3 font-medium text-[#00F5D4]">Railway Station <span className="text-gray-500 mx-1">➔</span> HNLU</td>
+                    <td className="px-4 py-3 font-medium text-[#00F5D4]">
+                      {getStationDisplayName('Railway Station', lang)} <span className="text-gray-500 mx-1">➔</span> {getStationDisplayName('HNLU', lang)}
+                    </td>
                     <td className="px-4 py-3 text-right font-black text-[#00F5D4]">₹30</td>
                   </tr>
                   <tr className="bg-[#161B22]/50">
                     <td className="px-4 py-3 text-gray-400 italic text-[11px]">
-                      Inter-Sector (Within Nava Raipur)
+                      {t('interSector', lang)}
                     </td>
                     <td className="px-4 py-3 text-right font-black text-white">₹10</td>
                   </tr>
@@ -72,7 +81,7 @@ export default function BottomSheet({ sheet, setSheet, lang = 'en' }) {
             </div>
 
             <p className="text-center text-[11px] text-gray-500 mt-4">
-              Tickets are issued by conductors onboard buses or at designated BRTS station counters.
+              {t('fareFooter', lang)}
             </p>
           </div>
         )}

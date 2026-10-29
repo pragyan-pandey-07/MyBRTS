@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import rawSchedules from '../data/schedules.json';
 import StationPickerModal, { ALL_STATIONS } from '../components/StationPickerModal';
+import { t, getStationDisplayName } from '../utils/translations';
 
 const ALL_STOPS = [
   'Railway Station',
@@ -74,15 +75,16 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
 
     rawSchedules.forEach(trip => {
       if (trip.service_type !== day) return;
+
       const stops = trip.stops || [];
       let origIdx = -1;
       let destIdx = -1;
 
       for (let i = 0; i < stops.length; i++) {
-        const sName = stops[i].stop_name.toLowerCase();
-        if (origIdx === -1 && sName.includes(o)) {
+        const sName = stops[i].stop_name.trim().toLowerCase();
+        if (origIdx === -1 && sName === o) {
           origIdx = i;
-        } else if (origIdx !== -1 && sName.includes(d)) {
+        } else if (origIdx !== -1 && sName === d) {
           destIdx = i;
           break;
         }
@@ -92,20 +94,20 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
         const depTime = stops[origIdx].time;
         const arrTime = stops[destIdx].time;
         const depMins = timeToMins(depTime);
-        const arrMins = timeToMins(arrTime);
-        let duration = arrMins - depMins;
-        if (duration < 0) duration += 24 * 60;
+        let arrMins = timeToMins(arrTime);
+        let dur = arrMins - depMins;
+        if (dur < 0) dur += 24 * 60;
 
         results.push({
-          id: trip.id,
+          id: trip.trip_id,
           route_number: trip.route_number,
-          direction: trip.direction,
           depTime,
           arrTime,
           depMins,
-          duration,
+          duration: dur,
+          stopsCount: destIdx - origIdx,
           intermediateStops: stops.slice(origIdx, destIdx + 1),
-          stopsCount: destIdx - origIdx
+          direction: trip.direction
         });
       }
     });
@@ -114,49 +116,34 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
     return results;
   }, [from, to, day]);
 
-  // Featured upcoming bus
   const nextBus = matchingTrips.length > 0 ? matchingTrips[0] : null;
 
   if (view === 'map') {
     return (
-      <div className="fixed inset-0 z-40 bg-[#0D1117] pt-20">
-        <div className="absolute inset-0 opacity-40" style={{ background: 'radial-gradient(circle at center, #161B22 0%, #0D1117 100%)' }}>
-          <div className="absolute inset-0 bg-[linear-gradient(#30363D_1px,transparent_1px),linear-gradient(90deg,#30363D_1px,transparent_1px)] bg-[size:40px_40px] opacity-30"></div>
-        </div>
+      <div className="max-w-md mx-auto w-full px-4 pb-24 pt-2">
+        <div className="glass-card rounded-3xl p-5 border border-[#30363D] text-center">
+          <div className="w-16 h-16 rounded-full bg-[#00F5D4]/10 border border-[#00F5D4]/30 flex items-center justify-center mx-auto mb-4">
+            <svg className="w-8 h-8 text-[#00F5D4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+            </svg>
+          </div>
+          <h3 className="text-xl font-black text-white mb-1">
+            {lang === 'hi' ? 'रायपुर-नवा रायपुर बीआरटीएस कॉरिडोर' : lang === 'cg' ? 'रायपुर-नवा रायपुर बीआरटीएस रूट नक्सा' : 'Raipur - Nava Raipur BRTS Corridor'}
+          </h3>
+          <p className="text-xs text-gray-400 mb-6">
+            {lang === 'hi' ? '21 समर्पित स्टेशन • मुख्य एक्सप्रेस व फीडर नेटवर्क' : lang === 'cg' ? '21 स्टेशन • सीधा एक्सप्रेस अउ फीडर बस' : '21 Dedicated Stations • Arterial Express & Feeder Network'}
+          </p>
 
-        <svg className="absolute inset-0 w-full h-full max-w-md mx-auto" viewBox="0 0 400 800" preserveAspectRatio="xMidYMid meet">
-          <path d="M 100 150 C 200 200 250 400 150 600 S 300 700 350 750" fill="none" stroke="#30363D" strokeWidth="5" strokeDasharray="10 10" />
-          <path d="M 100 150 C 200 200 250 400 190 480" fill="none" stroke="#00F5D4" strokeWidth="7" className="glow-green" strokeLinecap="round" />
-
-          <circle cx="100" cy="150" r="10" fill="#30363D" stroke="#0D1117" strokeWidth="4" />
-          <circle cx="215" cy="400" r="12" fill="#FF2A54" stroke="#0D1117" strokeWidth="4" className="glow-red animate-pulse" />
-          <circle cx="150" cy="600" r="10" fill="#0D1117" stroke="#00F5D4" strokeWidth="4" className="glow-green" />
-          <circle cx="350" cy="750" r="10" fill="#0D1117" stroke="#30363D" strokeWidth="4" />
-
-          <text x="120" y="155" fill="#9CA3AF" fontSize="14" fontWeight="600" fontFamily="sans-serif">Railway Station</text>
-          <text x="235" y="405" fill="#FF2A54" fontSize="18" fontWeight="bold" fontFamily="sans-serif" filter="drop-shadow(0 0 8px #FF2A54)">Telibandha</text>
-          <text x="170" y="605" fill="#00F5D4" fontSize="14" fontWeight="600" fontFamily="sans-serif">Sector 15</text>
-          <text x="290" y="755" fill="#9CA3AF" fontSize="14" fontWeight="600" fontFamily="sans-serif">HNLU</text>
-
-          <g transform="translate(170, 440)">
-            <circle cx="20" cy="20" r="25" fill="#FF2A54" fillOpacity="0.2" className="animate-[ping_2s_infinite]" />
-            <circle cx="20" cy="20" r="12" fill="#FF2A54" />
-            <path d="M20 8 L28 25 L12 25 Z" fill="#fff" transform="rotate(30 20 20)" />
-          </g>
-        </svg>
-
-        <div className="absolute top-20 left-4 right-4 z-50 max-w-md mx-auto">
-          <div className="glass-card rounded-2xl p-4 flex justify-between items-center shadow-[0_10px_30px_rgba(0,0,0,0.5)] border-t border-t-[#00F5D4]/30">
-            <div>
-              <p className="text-white font-black text-lg">BRT {nextBus ? nextBus.route_number : '04'}</p>
-              <p className="text-[#00F5D4] text-xs font-semibold mt-1 flex items-center gap-1">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#00F5D4] animate-pulse"></span>
-                {nextBus ? `Next Dep: ${nextBus.depTime}` : 'Arriving at Telibandha'}
-              </p>
+          <div className="space-y-3 text-left">
+            <div className="p-3 bg-[#0D1117] rounded-xl border border-[#30363D]">
+              <span className="text-[10px] text-[#00F5D4] font-bold uppercase tracking-wider block">Main Express Corridor</span>
+              <p className="text-xs font-bold text-white mt-0.5">Raipur Railway Station ➔ Telibandha ➔ CBD ➔ Indravati ➔ HNLU</p>
+              <p className="text-[11px] text-gray-400 mt-0.5">Routes 101, 102, 105, 201, 202, 203, 204, 205</p>
             </div>
-            <div className="text-right bg-[#0D1117] px-3 py-1.5 rounded-xl border border-[#30363D]">
-              <p className="text-gray-400 text-[10px] uppercase font-bold tracking-widest">ETA</p>
-              <p className="text-white font-bold text-xl">4 <span className="text-xs font-normal text-gray-400">min</span></p>
+            <div className="p-3 bg-[#0D1117] rounded-xl border border-[#30363D]">
+              <span className="text-[10px] text-[#FF2A54] font-bold uppercase tracking-wider block">Feeder Link</span>
+              <p className="text-xs font-bold text-white mt-0.5">North Block ➔ Indravati ➔ Sector 27 ➔ Muktangan ➔ Nawagaon</p>
+              <p className="text-[11px] text-gray-400 mt-0.5">Feeder Route F-01</p>
             </div>
           </div>
         </div>
@@ -183,19 +170,21 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
           <div className="relative z-10 flex flex-col gap-4">
             {/* Day Toggle Bar */}
             <div className="flex justify-between items-center pb-2 border-b border-[#30363D]/60">
-              <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">Service Day</span>
+              <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">
+                {t('serviceDay', lang)}
+              </span>
               <div className="flex gap-1 bg-[#0D1117] p-1 rounded-lg border border-[#30363D]">
                 <button
                   onClick={() => setDay('weekday')}
                   className={`px-3 py-1 text-[11px] font-bold rounded-md transition-colors ${day === 'weekday' ? 'bg-[#30363D] text-white shadow' : 'text-gray-400 hover:text-white'}`}
                 >
-                  Weekday
+                  {day === 'weekday' && lang !== 'en' ? 'सोम-शुक्र' : t('weekday', lang)}
                 </button>
                 <button
                   onClick={() => setDay('weekend')}
                   className={`px-3 py-1 text-[11px] font-bold rounded-md transition-colors ${day === 'weekend' ? 'bg-[#30363D] text-white shadow' : 'text-gray-400 hover:text-white'}`}
                 >
-                  Weekend
+                  {day === 'weekend' && lang !== 'en' ? 'शनि-रवि' : t('weekend', lang)}
                 </button>
               </div>
             </div>
@@ -216,22 +205,22 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
                     <div className="min-w-0">
                       <div className="flex items-center gap-2">
                         <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
-                          Departure Station
+                          {t('fromOrigin', lang)}
                         </span>
                         <span className="text-[9px] font-bold text-gray-400 bg-[#161B22] px-1.5 py-0.2 rounded border border-[#30363D]">
                           {fromDetail.tag}
                         </span>
                       </div>
                       <span className="text-sm font-black text-white block truncate mt-0.5">
-                        {fromDetail.name}
+                        {getStationDisplayName(fromDetail.name, lang)}
                       </span>
                       <span className="text-[10px] text-gray-400 block truncate">
-                        {fromDetail.subtitle}
+                        {lang !== 'en' ? fromDetail.name : fromDetail.subtitle}
                       </span>
                     </div>
                   </div>
                   <div className="flex items-center gap-1 text-gray-400 group-hover:text-[#00F5D4] pl-2 flex-shrink-0">
-                    <span className="text-[10px] font-bold uppercase hidden sm:inline">Change</span>
+                    <span className="text-[10px] font-bold uppercase hidden sm:inline">{t('change', lang)}</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
                     </svg>
@@ -251,22 +240,22 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
                     <div className="min-w-0">
                       <div className="flex items-center gap-2">
                         <span className="text-[10px] font-bold uppercase tracking-wider text-gray-400">
-                          Arrival Station
+                          {t('toDestination', lang)}
                         </span>
                         <span className="text-[9px] font-bold text-gray-400 bg-[#161B22] px-1.5 py-0.2 rounded border border-[#30363D]">
                           {toDetail.tag}
                         </span>
                       </div>
                       <span className="text-sm font-black text-white block truncate mt-0.5">
-                        {toDetail.name}
+                        {getStationDisplayName(toDetail.name, lang)}
                       </span>
                       <span className="text-[10px] text-gray-400 block truncate">
-                        {toDetail.subtitle}
+                        {lang !== 'en' ? toDetail.name : toDetail.subtitle}
                       </span>
                     </div>
                   </div>
                   <div className="flex items-center gap-1 text-gray-400 group-hover:text-[#FF2A54] pl-2 flex-shrink-0">
-                    <span className="text-[10px] font-bold uppercase hidden sm:inline">Change</span>
+                    <span className="text-[10px] font-bold uppercase hidden sm:inline">{t('change', lang)}</span>
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
                     </svg>
@@ -279,7 +268,7 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
                 type="button"
                 className="bg-[#161B22] border border-[#30363D] p-3.5 rounded-2xl hover:border-[#00F5D4] transition-all z-20 shadow-lg active:scale-90 flex-shrink-0 flex items-center justify-center hover:bg-[#0D1117] group"
                 onClick={swap}
-                title="Swap Origin and Destination"
+                title={t('swap', lang)}
               >
                 <svg className="w-4 h-4 text-[#00F5D4] group-hover:rotate-180 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
@@ -288,9 +277,9 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
             </div>
 
             <div className="flex items-center justify-between text-xs text-gray-400 px-1">
-              <span>{matchingTrips.length} scheduled buses available</span>
+              <span>{matchingTrips.length} {t('scheduledBuses', lang)}</span>
               {matchingTrips.length > 0 && (
-                <span className="text-[#00F5D4] font-bold">First at {matchingTrips[0].depTime}</span>
+                <span className="text-[#00F5D4] font-bold">{t('firstAt', lang)} {matchingTrips[0].depTime}</span>
               )}
             </div>
           </div>
@@ -307,9 +296,9 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
             </svg>
           </div>
           <div className="flex-1">
-            <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider">Nearest Bus Radar</p>
-            <p className="text-xs font-bold text-white">Sector 27 South Block Stop</p>
-            <p className="text-[#00F5D4] text-[11px] font-medium">250m • 3 min walk</p>
+            <p className="text-[10px] text-gray-400 font-semibold uppercase tracking-wider">{t('nearestRadar', lang)}</p>
+            <p className="text-xs font-bold text-white">{t('nearestStopName', lang)}</p>
+            <p className="text-[#00F5D4] text-[11px] font-medium">{t('nearestStopWalk', lang)}</p>
           </div>
         </div>
       </div>
@@ -319,7 +308,9 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
         <div className="glass-card rounded-3xl p-5 relative shadow-xl overflow-hidden">
           <div className="flex justify-between items-center mb-4">
             <div>
-              <p className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">Active Service</p>
+              <p className="text-[10px] text-gray-400 font-bold uppercase tracking-wider">
+                {lang === 'hi' ? 'सक्रिय बस सेवा' : lang === 'cg' ? 'चालू बस सेवा' : 'Active Service'}
+              </p>
               <h3 className="text-xl font-black text-white flex items-center gap-2">
                 BRT {nextBus ? nextBus.route_number : '101'}
                 <span className="bg-[#00F5D4]/10 text-[#00F5D4] text-[10px] px-2 py-0.5 rounded-full border border-[#00F5D4]/30 uppercase tracking-widest font-bold">
@@ -333,12 +324,12 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
               onClick={() => {
                 const nextState = !isOnboard;
                 setIsOnboard(nextState);
-                showToast(nextState ? 'Onboard GPS Broadcast Active 🛰️' : 'Onboard Tracking Deactivated');
+                showToast(nextState ? t('onboardToastOn', lang) : t('onboardToastOff', lang));
               }}
               className={`px-3 py-1.5 rounded-full text-[11px] font-bold border flex items-center gap-2 transition-all ${isOnboard ? 'border-[#00F5D4] bg-[#00F5D4]/20 text-white shadow-[0_0_12px_rgba(0,245,212,0.3)]' : 'border-[#30363D] bg-[#0D1117] text-gray-400 hover:text-white'}`}
             >
               <div className={`w-2 h-2 rounded-full ${isOnboard ? 'bg-[#00F5D4] animate-ping' : 'bg-gray-500'}`}></div>
-              <span>{isOnboard ? "I'm Inside This Bus" : "Onboard Mode"}</span>
+              <span>{isOnboard ? t('onboardMode', lang) : (lang === 'hi' ? 'सवार मोड' : lang === 'cg' ? 'सवार मोड' : 'Onboard Mode')}</span>
             </button>
           </div>
 
@@ -346,20 +337,26 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
           {nextBus ? (
             <div className="flex justify-between items-end pb-4 border-b border-[#30363D] mb-4">
               <div>
-                <p className="text-xs text-gray-400">Scheduled Departure</p>
+                <p className="text-xs text-gray-400">
+                  {lang === 'hi' ? 'प्रस्थान समय' : lang === 'cg' ? 'छूटे के समै' : 'Scheduled Departure'}
+                </p>
                 <p className="text-2xl font-black text-white">{nextBus.depTime}</p>
-                <p className="text-xs text-[#00F5D4] mt-0.5">Est. Arrival: {nextBus.arrTime}</p>
+                <p className="text-xs text-[#00F5D4] mt-0.5">
+                  {lang === 'hi' ? 'अनुमानित आगमन' : lang === 'cg' ? 'पहुंचे के समै' : 'Est. Arrival'}: {nextBus.arrTime}
+                </p>
               </div>
               <div className="text-right">
                 <span className="inline-block px-2.5 py-1 bg-[#FF2A54]/10 border border-[#FF2A54]/40 rounded-lg text-[#FF2A54] text-xs font-black animate-pulse">
-                  {nextBus.duration} min ride
+                  {nextBus.duration} {t('mins', lang)}
                 </span>
-                <p className="text-[10px] text-gray-400 mt-1">{nextBus.stopsCount} intermediate stops</p>
+                <p className="text-[10px] text-gray-400 mt-1">
+                  {nextBus.stopsCount} {t('intermediateStops', lang)}
+                </p>
               </div>
             </div>
           ) : (
             <div className="text-center py-4 text-gray-400 text-xs">
-              No direct buses found between "{from}" and "{to}" on {day}s. Try swapping stops.
+              {t('noBusesFound', lang)}
             </div>
           )}
 
@@ -372,19 +369,19 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
                 </svg>
               </div>
               <div>
-                <p className="text-xs font-bold text-white">Destination Wake-up Alarm</p>
-                <p className="text-[10px] text-gray-400">Ring 1 stop before arriving</p>
+                <p className="text-xs font-bold text-white">{t('destAlarm', lang)}</p>
+                <p className="text-[10px] text-gray-400">{t('destAlarmDesc', lang)}</p>
               </div>
             </div>
             <button
               onClick={() => {
                 const nextAlarm = !alarmActive;
                 setAlarmActive(nextAlarm);
-                showToast(nextAlarm ? 'Alarm Set: 1 Stop Before Arrival 🔔' : 'Alarm Cancelled');
+                showToast(nextAlarm ? `${t('alarmSetToast', lang)} ${getStationDisplayName(to, lang)}` : t('alarmOffToast', lang));
               }}
               className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${alarmActive ? 'bg-[#FF2A54] text-white glow-red' : 'bg-[#161B22] border border-[#30363D] text-gray-300 hover:border-[#00F5D4]'}`}
             >
-              {alarmActive ? 'Active' : 'Enable'}
+              {alarmActive ? (lang === 'hi' ? 'सक्रिय' : lang === 'cg' ? 'चालू' : 'Active') : (lang === 'hi' ? 'चालू करें' : lang === 'cg' ? 'चालू करव' : 'Enable')}
             </button>
           </div>
         </div>
@@ -393,8 +390,12 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
       {/* Matching Buses List */}
       <div className="px-4">
         <h3 className="text-sm font-black text-white uppercase tracking-wider mb-3 flex items-center justify-between">
-          <span>All Scheduled Departures ({matchingTrips.length})</span>
-          <span className="text-[10px] text-gray-400 font-semibold lowercase">tap to expand stops</span>
+          <span>
+            {lang === 'hi' ? `सभी निर्धारित फेरे (${matchingTrips.length})` : lang === 'cg' ? `जम्मो फेरा (${matchingTrips.length})` : `All Scheduled Departures (${matchingTrips.length})`}
+          </span>
+          <span className="text-[10px] text-gray-400 font-semibold lowercase">
+            {lang === 'hi' ? 'स्टॉप देखने हेतु टैप करें' : lang === 'cg' ? 'स्टॉप देखे बर टैप करव' : 'tap to expand stops'}
+          </span>
         </h3>
 
         <div className="flex flex-col gap-2.5">
@@ -423,19 +424,19 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
                         <span className="text-xs font-bold text-gray-300">{trip.arrTime}</span>
                         {isNext && (
                           <span className="bg-[#00F5D4] text-[#0D1117] text-[9px] font-black px-1.5 py-0.5 rounded ml-1">
-                            NEXT
+                            {lang === 'hi' ? 'अगली बस' : lang === 'cg' ? 'अगली बस' : 'NEXT'}
                           </span>
                         )}
                       </div>
                       <p className="text-[11px] text-gray-400 mt-0.5">
-                        {trip.duration} mins • {trip.stopsCount} stops
+                        {trip.duration} {t('mins', lang)} • {trip.stopsCount} {t('intermediateStops', lang)}
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-2">
                     <button className="text-xs font-bold text-[#00F5D4]">
-                      {isExpanded ? 'Hide' : 'Stops'}
+                      {isExpanded ? t('hideStops', lang) : t('showStops', lang)}
                     </button>
                     <svg
                       className={`w-4 h-4 text-gray-400 transition-transform ${isExpanded ? 'rotate-180 text-[#00F5D4]' : ''}`}
@@ -461,7 +462,7 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
                               className={`absolute -left-[27px] w-3 h-3 rounded-full border-2 ${isStart ? 'bg-[#00F5D4] border-[#0D1117]' : isEnd ? 'bg-[#FF2A54] border-[#0D1117]' : 'bg-[#161B22] border-gray-600'}`}
                             ></div>
                             <span className={isStart || isEnd ? 'text-white font-bold' : 'text-gray-300'}>
-                              {st.stop_name}
+                              {getStationDisplayName(st.stop_name, lang)}
                             </span>
                             <span className="font-mono text-[11px] text-[#00F5D4] font-semibold">
                               {st.time}
@@ -490,6 +491,7 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
           setActivePicker(null);
         }}
         onClose={() => setActivePicker(null)}
+        lang={lang}
       />
     </div>
   );

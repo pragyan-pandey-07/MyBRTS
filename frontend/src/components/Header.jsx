@@ -1,4 +1,5 @@
 import React from 'react';
+import { t } from '../utils/translations';
 
 export default function Header({ lang, setLang }) {
   return (
@@ -8,13 +9,13 @@ export default function Header({ lang, setLang }) {
           <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
         </div>
         <div>
-          <h1 className="text-base font-bold text-white tracking-wide leading-tight">Tatpar BRT</h1>
-          <p className="text-[10px] text-[#00F5D4] tracking-widest uppercase font-semibold">Nava Raipur</p>
+          <h1 className="text-base font-bold text-white tracking-wide leading-tight">{t('appName', lang)}</h1>
+          <p className="text-[10px] text-[#00F5D4] tracking-widest uppercase font-semibold">{t('subName', lang)}</p>
         </div>
       </div>
       
       <div className="flex items-center gap-3 relative">
-        <select value={lang} onChange={(e) => setLang(e.target.value)} className="bg-[#0D1117] border border-[#30363D] text-xs py-1.5 px-3 rounded-full focus:outline-none focus:border-[#00F5D4] text-[#00F5D4] font-medium shadow-inner appearance-none pr-8 relative">
+        <select value={lang} onChange={(e) => setLang(e.target.value)} className="bg-[#0D1117] border border-[#30363D] text-xs py-1.5 px-3 rounded-full focus:outline-none focus:border-[#00F5D4] text-[#00F5D4] font-medium shadow-inner appearance-none pr-8 relative cursor-pointer">
           <option value="en">English</option>
           <option value="hi">हिंदी</option>
           <option value="cg">छत्तीसगढ़ी</option>

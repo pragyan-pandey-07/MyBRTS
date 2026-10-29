@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { t, getStationDisplayName, STATION_NAMES } from '../utils/translations';
 
 export const ALL_STATIONS = [
   { name: 'Railway Station', subtitle: 'Main Rail Hub & Central Terminus', tag: 'Terminus', category: 'Hubs' },
@@ -24,7 +25,15 @@ export const ALL_STATIONS = [
   { name: 'Nawagaon', subtitle: 'Feeder Transit Terminal & Interchange', tag: 'Feeder', category: 'Sectors' }
 ];
 
-const CATEGORIES = ['All', 'Hubs', 'Govt', 'Colleges', 'Tourism', 'Sectors'];
+const CATEGORY_ITEMS = [
+  { key: 'All', tKey: 'all' },
+  { key: 'Hubs', tKey: 'hubs' },
+  { key: 'Govt', tKey: 'govt' },
+  { key: 'Colleges', tKey: 'colleges' },
+  { key: 'Tourism', tKey: 'tourism' },
+  { key: 'Sectors', tKey: 'sectors' }
+];
+
 const POPULAR_HUBS = ['Railway Station', 'Telibandha', 'CBD', 'Jungle Safari', 'IIIT', 'HNLU', 'Nawagaon'];
 
 export default function StationPickerModal({
@@ -33,7 +42,8 @@ export default function StationPickerModal({
   currentValue,
   otherValue,
   onSelect,
-  onClose
+  onClose,
+  lang = 'en'
 }) {
   const [search, setSearch] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -41,21 +51,18 @@ export default function StationPickerModal({
 
   const isOrigin = type === 'from';
   const themeColor = isOrigin ? '#00F5D4' : '#FF2A54';
-  const themeGlow = isOrigin ? 'glow-green' : 'glow-red';
-  const titleText = isOrigin ? 'Select Departure Station' : 'Select Arrival Station';
+  const titleText = isOrigin ? t('selectDepTitle', lang) : t('selectArrTitle', lang);
 
   useEffect(() => {
     if (isOpen) {
       setSearch('');
       setSelectedCategory('All');
-      // Auto focus search input
       setTimeout(() => {
         if (searchInputRef.current) searchInputRef.current.focus();
       }, 100);
     }
   }, [isOpen, type]);
 
-  // Handle ESC key to close
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape' && isOpen) onClose();
@@ -65,18 +72,22 @@ export default function StationPickerModal({
   }, [isOpen, onClose]);
 
   const filteredStations = useMemo(() => {
+    const query = search.trim().toLowerCase();
     return ALL_STATIONS.filter(st => {
+      const translatedName = getStationDisplayName(st.name, lang).toLowerCase();
       const matchesSearch =
-        st.name.toLowerCase().includes(search.toLowerCase()) ||
-        st.subtitle.toLowerCase().includes(search.toLowerCase()) ||
-        st.tag.toLowerCase().includes(search.toLowerCase());
+        !query ||
+        st.name.toLowerCase().includes(query) ||
+        translatedName.includes(query) ||
+        st.subtitle.toLowerCase().includes(query) ||
+        st.tag.toLowerCase().includes(query);
 
       const matchesCat =
         selectedCategory === 'All' || st.category === selectedCategory;
 
       return matchesSearch && matchesCat;
     });
-  }, [search, selectedCategory]);
+  }, [search, selectedCategory, lang]);
 
   if (!isOpen) return null;
 
@@ -144,7 +155,7 @@ export default function StationPickerModal({
               type="text"
               value={search}
               onChange={e => setSearch(e.target.value)}
-              placeholder="Search by stop name, sector, or landmark..."
+              placeholder={t('searchPlaceholder', lang)}
               className="w-full bg-[#161B22] border border-[#30363D] rounded-xl pl-10 pr-9 py-2.5 text-xs font-semibold text-white placeholder-gray-500 focus:outline-none focus:border-[#00F5D4] transition-all shadow-inner"
             />
             {search && (
@@ -162,40 +173,43 @@ export default function StationPickerModal({
           {/* Quick Hubs Shortcuts */}
           <div className="flex items-center gap-1.5 mt-3 overflow-x-auto pb-1 scrollbar-none">
             <span className="text-[10px] text-gray-500 font-bold uppercase tracking-wider flex-shrink-0 mr-1">
-              Popular:
+              {t('popularHubs', lang)}
             </span>
-            {POPULAR_HUBS.map(hub => (
-              <button
-                key={hub}
-                type="button"
-                onClick={() => onSelect(hub)}
-                className={`text-[10px] font-bold px-2.5 py-1 rounded-full border whitespace-nowrap transition-all ${
-                  hub === currentValue
-                    ? isOrigin
-                      ? 'border-[#00F5D4] bg-[#00F5D4]/20 text-[#00F5D4]'
-                      : 'border-[#FF2A54] bg-[#FF2A54]/20 text-[#FF2A54]'
-                    : 'border-[#30363D] bg-[#161B22] text-gray-300 hover:border-gray-500 hover:text-white'
-                }`}
-              >
-                {hub.replace('Station', 'Stn')}
-              </button>
-            ))}
+            {POPULAR_HUBS.map(hub => {
+              const displayName = getStationDisplayName(hub, lang);
+              return (
+                <button
+                  key={hub}
+                  type="button"
+                  onClick={() => onSelect(hub)}
+                  className={`text-[10px] font-bold px-2.5 py-1 rounded-full border whitespace-nowrap transition-all ${
+                    hub === currentValue
+                      ? isOrigin
+                        ? 'border-[#00F5D4] bg-[#00F5D4]/20 text-[#00F5D4]'
+                        : 'border-[#FF2A54] bg-[#FF2A54]/20 text-[#FF2A54]'
+                      : 'border-[#30363D] bg-[#161B22] text-gray-300 hover:border-gray-500 hover:text-white'
+                  }`}
+                >
+                  {displayName.replace('रायपुर ', '').split(' ')[0]}
+                </button>
+              );
+            })}
           </div>
 
           {/* Category Tabs */}
           <div className="flex items-center gap-1.5 mt-2 overflow-x-auto pb-1 scrollbar-none">
-            {CATEGORIES.map(cat => (
+            {CATEGORY_ITEMS.map(cat => (
               <button
-                key={cat}
+                key={cat.key}
                 type="button"
-                onClick={() => setSelectedCategory(cat)}
+                onClick={() => setSelectedCategory(cat.key)}
                 className={`text-[10px] font-bold px-3 py-1 rounded-lg border whitespace-nowrap transition-all ${
-                  selectedCategory === cat
+                  selectedCategory === cat.key
                     ? 'bg-[#30363D] text-white border-gray-500 shadow-sm'
                     : 'bg-transparent text-gray-400 border-transparent hover:text-gray-200'
                 }`}
               >
-                {cat}
+                {t(cat.tKey, lang)}
               </button>
             ))}
           </div>
@@ -205,12 +219,13 @@ export default function StationPickerModal({
         <div className="overflow-y-auto divide-y divide-[#30363D]/40 p-2 max-h-[55vh]">
           {filteredStations.length === 0 ? (
             <div className="p-8 text-center text-xs text-gray-400">
-              No stations match "{search}". Try searching "Railway", "Sector", or "HNLU".
+              {t('noStationsFound', lang).replace('{search}', search)}
             </div>
           ) : (
             filteredStations.map(station => {
               const isSelected = station.name === currentValue;
               const isOpposite = station.name === otherValue;
+              const displayName = getStationDisplayName(station.name, lang);
 
               return (
                 <button
@@ -259,16 +274,16 @@ export default function StationPickerModal({
                             isSelected ? 'text-white' : 'text-gray-100 group-hover:text-white'
                           }`}
                         >
-                          {station.name}
+                          {displayName}
                         </span>
                         {isOpposite && (
                           <span className="text-[9px] font-bold text-gray-400 bg-[#0D1117] px-1.5 py-0.5 rounded border border-[#30363D]">
-                            Opposite
+                            {t('opposite', lang)}
                           </span>
                         )}
                       </div>
                       <p className="text-[11px] text-gray-400 truncate mt-0.5">
-                        {station.subtitle}
+                        {lang !== 'en' ? station.name : station.subtitle}
                       </p>
                     </div>
                   </div>
@@ -296,12 +311,16 @@ export default function StationPickerModal({
 
         {/* Footer info */}
         <div className="p-3 bg-[#0D1117] border-t border-[#30363D]/60 flex items-center justify-between text-[11px] text-gray-400">
-          <span>Showing {filteredStations.length} of {ALL_STATIONS.length} stations</span>
+          <span>
+            {t('showingOf', lang)
+              .replace('{count}', filteredStations.length)
+              .replace('{total}', ALL_STATIONS.length)}
+          </span>
           <button
             onClick={onClose}
             className="text-white hover:text-[#00F5D4] font-bold transition-colors"
           >
-            Cancel
+            {t('cancel', lang)}
           </button>
         </div>
       </div>
