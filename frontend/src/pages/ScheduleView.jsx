@@ -49,16 +49,22 @@ export default function ScheduleView({ lang = 'en' }) {
         </div>
         
         {/* Day toggle */}
-        <div className="flex gap-1 bg-[#161B22] p-1 rounded-xl border border-[#30363D]">
+        <div className="day-pill-container">
           <button
+            type="button"
             onClick={() => { setDay('weekday'); setSelectedRoute('ALL'); }}
-            className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${day === 'weekday' ? 'bg-[#FF2A54] text-white glow-red' : 'text-gray-400 hover:text-white'}`}
+            className={`px-3 py-1.5 text-xs transition-all ${
+              day === 'weekday' ? 'day-pill-active' : 'day-pill-inactive'
+            }`}
           >
             {day === 'weekday' && lang !== 'en' ? 'सोम-शुक्र' : t('weekday', lang)}
           </button>
           <button
+            type="button"
             onClick={() => { setDay('weekend'); setSelectedRoute('ALL'); }}
-            className={`px-3 py-1.5 text-xs font-bold rounded-lg transition-all ${day === 'weekend' ? 'bg-[#FF2A54] text-white glow-red' : 'text-gray-400 hover:text-white'}`}
+            className={`px-3 py-1.5 text-xs transition-all ${
+              day === 'weekend' ? 'day-pill-active' : 'day-pill-inactive'
+            }`}
           >
             {day === 'weekend' && lang !== 'en' ? 'शनि-रवि' : t('weekend', lang)}
           </button>

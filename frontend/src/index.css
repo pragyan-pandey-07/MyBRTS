@@ -29,15 +29,15 @@
   --bg-page: #F3F4F6;
   --bg-surface: rgba(255, 255, 255, 0.9);
   --bg-surface-solid: #FFFFFF;
-  --bg-elevated: #F8FAFC;
-  --border-subtle: #E2E8F0;
-  --border-strong: #CBD5E1;
+  --bg-elevated: #E2E8F0;
+  --border-subtle: #CBD5E1;
+  --border-strong: #94A3B8;
   --text-main: #0F172A;
   --text-muted: #64748B;
   --text-dim: #94A3B8;
   --accent-cyan: #0D9488;
   --accent-pink: #E11D48;
-  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-bg: rgba(255, 255, 255, 0.92);
   --modal-bg: #FFFFFF;
   --radial-1: rgba(13, 148, 136, 0.06);
   --radial-2: rgba(225, 29, 72, 0.05);
@@ -204,6 +204,49 @@ body {
 }
 
 /* ========================================================
+   SEGMENTED PILL CONTROLLERS (WEEKDAY / WEEKEND)
+   Zero shadowing, high contrast in both dark & light modes
+   ======================================================== */
+
+.day-pill-container {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  padding: 3px;
+  border-radius: 12px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.day-pill-active {
+  background-color: var(--accent-cyan) !important;
+  color: #0D1117 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18) !important;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+[data-mode="light"] .day-pill-active {
+  background-color: var(--accent-cyan) !important;
+  color: #FFFFFF !important;
+  font-weight: 800 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.14) !important;
+}
+
+.day-pill-inactive {
+  background-color: transparent !important;
+  color: var(--text-muted) !important;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.day-pill-inactive:hover {
+  color: var(--text-main) !important;
+}
+
+/* ========================================================
    DYNAMIC LIGHT MODE OVERRIDES
    Ensures seamless daylight readability across existing components
    ======================================================== */
@@ -229,8 +272,13 @@ body {
   border-color: var(--border-subtle) !important;
 }
 
-[data-mode="light"] .text-white {
-  color: var(--text-main) !important;
+/* Clean text colors in light mode, while preserving colored buttons */
+[data-mode="light"] h1,
+[data-mode="light"] h2,
+[data-mode="light"] h3,
+[data-mode="light"] span.text-white,
+[data-mode="light"] p.text-white {
+  color: var(--text-main);
 }
 
 [data-mode="light"] .text-gray-200,

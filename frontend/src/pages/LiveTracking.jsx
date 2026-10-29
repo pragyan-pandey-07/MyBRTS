@@ -173,16 +173,22 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
               <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">
                 {t('serviceDay', lang)}
               </span>
-              <div className="flex gap-1 bg-[#0D1117] p-1 rounded-lg border border-[#30363D]">
+              <div className="day-pill-container">
                 <button
+                  type="button"
                   onClick={() => setDay('weekday')}
-                  className={`px-3 py-1 text-[11px] font-bold rounded-md transition-colors ${day === 'weekday' ? 'bg-[#30363D] text-white shadow' : 'text-gray-400 hover:text-white'}`}
+                  className={`px-3 py-1.5 text-xs transition-all ${
+                    day === 'weekday' ? 'day-pill-active' : 'day-pill-inactive'
+                  }`}
                 >
                   {day === 'weekday' && lang !== 'en' ? 'सोम-शुक्र' : t('weekday', lang)}
                 </button>
                 <button
+                  type="button"
                   onClick={() => setDay('weekend')}
-                  className={`px-3 py-1 text-[11px] font-bold rounded-md transition-colors ${day === 'weekend' ? 'bg-[#30363D] text-white shadow' : 'text-gray-400 hover:text-white'}`}
+                  className={`px-3 py-1.5 text-xs transition-all ${
+                    day === 'weekend' ? 'day-pill-active' : 'day-pill-inactive'
+                  }`}
                 >
                   {day === 'weekend' && lang !== 'en' ? 'शनि-रवि' : t('weekend', lang)}
                 </button>
