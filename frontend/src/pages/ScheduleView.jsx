@@ -119,17 +119,18 @@ export default function ScheduleView({ lang = 'en' }) {
             {t('noBusesFound', lang)}
           </div>
         ) : (
-          filteredTrips.map((trip) => {
-            const isExpanded = expandedTripId === trip.id;
+          filteredTrips.map((trip, idx) => {
+            const tripId = trip.id || `sched-${trip.route_number}-${trip.departure_time}-${idx}`;
+            const isExpanded = Boolean(expandedTripId && tripId && expandedTripId === tripId);
             return (
               <div
-                key={trip.id}
+                key={tripId}
                 className="glass-card rounded-2xl border border-[#30363D] overflow-hidden transition-all hover:border-[#00F5D4]/40"
               >
                 {/* Trip Card Header */}
                 <div
                   className="p-4 cursor-pointer flex items-center justify-between"
-                  onClick={() => toggleTrip(trip.id)}
+                  onClick={() => toggleTrip(tripId)}
                 >
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-xl bg-[#0D1117] border border-[#30363D] flex flex-col items-center justify-center font-mono">

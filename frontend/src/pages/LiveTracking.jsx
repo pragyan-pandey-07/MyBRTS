@@ -99,7 +99,7 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
         if (dur < 0) dur += 24 * 60;
 
         results.push({
-          id: trip.trip_id,
+          id: trip.id || `trip-${trip.route_number}-${depTime}-${origIdx}`,
           route_number: trip.route_number,
           depTime,
           arrTime,
@@ -373,7 +373,7 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
 
         <div className="flex flex-col gap-2.5">
           {matchingTrips.map((trip, idx) => {
-            const isExpanded = expandedTripId === trip.id;
+            const isExpanded = Boolean(expandedTripId && trip.id && expandedTripId === trip.id);
             const isNext = idx === 0;
 
             return (
