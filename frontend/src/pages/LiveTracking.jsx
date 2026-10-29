@@ -118,39 +118,6 @@ export default function LiveTracking({ view = 'linear', lang = 'en' }) {
 
   const nextBus = matchingTrips.length > 0 ? matchingTrips[0] : null;
 
-  if (view === 'map') {
-    return (
-      <div className="max-w-md mx-auto w-full px-4 pb-24 pt-2">
-        <div className="glass-card rounded-3xl p-5 border border-[#30363D] text-center">
-          <div className="w-16 h-16 rounded-full bg-[#00F5D4]/10 border border-[#00F5D4]/30 flex items-center justify-center mx-auto mb-4">
-            <svg className="w-8 h-8 text-[#00F5D4]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-            </svg>
-          </div>
-          <h3 className="text-xl font-black text-white mb-1">
-            {lang === 'hi' ? 'रायपुर-नवा रायपुर बीआरटीएस कॉरिडोर' : lang === 'cg' ? 'रायपुर-नवा रायपुर बीआरटीएस रूट नक्सा' : 'Raipur - Nava Raipur BRTS Corridor'}
-          </h3>
-          <p className="text-xs text-gray-400 mb-6">
-            {lang === 'hi' ? '21 समर्पित स्टेशन • मुख्य एक्सप्रेस व फीडर नेटवर्क' : lang === 'cg' ? '21 स्टेशन • सीधा एक्सप्रेस अउ फीडर बस' : '21 Dedicated Stations • Arterial Express & Feeder Network'}
-          </p>
-
-          <div className="space-y-3 text-left">
-            <div className="p-3 bg-[#0D1117] rounded-xl border border-[#30363D]">
-              <span className="text-[10px] text-[#00F5D4] font-bold uppercase tracking-wider block">Main Express Corridor</span>
-              <p className="text-xs font-bold text-white mt-0.5">Raipur Railway Station ➔ Telibandha ➔ CBD ➔ Indravati ➔ HNLU</p>
-              <p className="text-[11px] text-gray-400 mt-0.5">Routes 101, 102, 105, 201, 202, 203, 204, 205</p>
-            </div>
-            <div className="p-3 bg-[#0D1117] rounded-xl border border-[#30363D]">
-              <span className="text-[10px] text-[#FF2A54] font-bold uppercase tracking-wider block">Feeder Link</span>
-              <p className="text-xs font-bold text-white mt-0.5">North Block ➔ Indravati ➔ Sector 27 ➔ Muktangan ➔ Nawagaon</p>
-              <p className="text-[11px] text-gray-400 mt-0.5">Feeder Route F-01</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="max-w-md mx-auto w-full pb-24">
       {/* Toast Alert */}

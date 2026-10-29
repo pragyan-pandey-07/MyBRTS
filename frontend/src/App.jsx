@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import LiveTracking from './pages/LiveTracking';
 import ScheduleView from './pages/ScheduleView';
+import OnboardMode from './pages/OnboardMode';
 import BottomNav from './components/BottomNav';
 import Header from './components/Header';
 import BottomSheet from './components/BottomSheet';
@@ -10,7 +11,7 @@ import ThemeSelectorModal from './components/ThemeSelectorModal';
 function App() {
   const [lang, setLang] = useState('en');
   const [sheet, setSheet] = useState(null); // 'fare' or null
-  const [view, setView] = useState('linear'); // 'linear', 'schedule', or 'map'
+  const [view, setView] = useState('linear'); // 'linear', 'onboard', or 'schedule'
 
   // Dark & Light Mode and Theme Palette State
   const [mode, setMode] = useState(() => localStorage.getItem('theme_mode') || 'dark');
@@ -48,6 +49,8 @@ function App() {
         <main className="pb-16">
           {view === 'schedule' ? (
             <ScheduleView lang={lang} />
+          ) : view === 'onboard' ? (
+            <OnboardMode lang={lang} />
           ) : (
             <LiveTracking view={view} lang={lang} />
           )}
